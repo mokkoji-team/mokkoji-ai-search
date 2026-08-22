@@ -8,3 +8,5 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+# Claude Code session tabs (대화 내용 포함)
+/claudeCodeEditorTabs.xml
