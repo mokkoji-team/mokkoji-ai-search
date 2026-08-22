@@ -1,10 +1,10 @@
 """학습 데이터(train_pairs.json) 자동 생성 스크립트.
 
-clubs.json의 실제 동아리 데이터에서 (query, club_id) 쌍을 자동으로 만든다.
+동아리/모집글의 모든 필드를 활용해 (query, club_id) 쌍을 생성한다.
 새 동아리가 추가되거나 설명이 수정되면 이 스크립트를 다시 실행하면 된다.
 
 사용:
-  python src/generate_pairs.py           # 이름/설명 기반 자동 생성만
+  python src/generate_pairs.py           # 전체 필드 기반 자동 생성
   python src/generate_pairs.py --claude  # Claude API로 사용자 쿼리 추가 생성 (ANTHROPIC_API_KEY 필요)
 """
 
@@ -19,35 +19,35 @@ BASE_DIR = Path(__file__).parent.parent
 CLUBS_PATH = BASE_DIR / "data" / "clubs.json"
 OUTPUT_PATH = BASE_DIR / "data" / "train_pairs.json"
 
-# 실제 사용자 검색 패턴 기반으로 직접 작성한 고품질 쌍
-# (자동 생성만으로는 커버 못하는 별칭·오타·의도 기반 검색어)
-CURATED_PAIRS = [
-    # SMARCLE (id=36, 세종대 AI 학술동아리)
-    {"query": "스마클", "club_id": 36},
-    {"query": "SMARCLE", "club_id": 36},
-    {"query": "AI 동아리", "club_id": 36},
-    {"query": "인공지능 동아리", "club_id": 36},
-    {"query": "머신러닝 공부하는 동아리", "club_id": 36},
-    {"query": "딥러닝 스터디", "club_id": 36},
-    {"query": "데이터사이언스 동아리", "club_id": 36},
-    {"query": "자연어처리 NLP 배우고 싶어", "club_id": 36},
-    {"query": "캐글 대회 참가하는 동아리", "club_id": 36},
-    {"query": "AI 프로젝트 해보고 싶어", "club_id": 36},
-    {"query": "논문 리뷰 모임", "club_id": 36},
-    {"query": "파이썬 딥러닝 공부", "club_id": 36},
-    {"query": "AI 경진대회 나가는 동아리", "club_id": 36},
-]
+# 카테고리 → 대표 검색어
+CATEGORY_QUERIES = {
+    "SPORTS":            ["스포츠", "운동", "체육", "sports"],
+    "ACADEMIC_CULTURAL": ["학술", "스터디", "공부", "IT", "코딩", "학문"],
+    "CULTURAL_ART":      ["문화예술", "공연", "예술", "문화"],
+    "RELIGIOUS":         ["종교", "신앙", "기도"],
+    "VOLUNTEER_SOCIAL":  ["봉사", "사회", "나눔", "봉사활동"],
+    "OTHER":             [],
+}
+
+# 소속 → 대표 검색어
+AFFILIATION_QUERIES = {
+    "CENTRAL_CLUB":    ["중앙동아리", "중앙 동아리"],
+    "DEPARTMENT_CLUB": ["과 동아리", "학과 동아리"],
+    "SMALL_GROUP":     ["소모임"],
+}
+
+# 학교 → 대표 검색어
+UNIVERSITY_QUERIES = {
+    "HANYANG": ["한양대", "한양대학교", "HY"],
+    "KONKUK":  ["건국대", "건국대학교"],
+    "SEJONG":  ["세종대", "세종대학교"],
+}
 
 
 def split_sentences(text: str) -> list[str]:
-    """설명에서 문장을 분리한다."""
-    # 이모지·특수문자 제거 후 문장 분리
-    text = re.sub(r'[😊🙌🏻💪🔥✨🎉🎵🎶🎸🎤🎷🎺🏃🏋️⚽🎨📸📚✈️🌏]+', '', text)
-    sentences = re.split(r'[.!?\n]+', text)
-    return [s.strip() for s in sentences if len(s.strip()) > 15]
-
-
-# 노이즈가 많아 제거됨 — 첫 문장 방식으로 대체
+    text = re.sub(r'[^\w\s.,!?()·\-]', ' ', text)  # 이모지·특수문자 제거
+    sentences = re.split(r'[.!?\n▶▷•·]+', text)
+    return [s.strip() for s in sentences if 10 < len(s.strip()) < 100]
 
 
 def is_english_name(name: str) -> bool:
@@ -56,41 +56,65 @@ def is_english_name(name: str) -> bool:
 
 def generate_auto_pairs(clubs: list[dict]) -> list[dict]:
     pairs = []
-    seen = set()
+    seen: set[tuple] = set()
 
     def add(query: str, club_id: int):
-        key = (query.strip(), club_id)
-        if key not in seen and len(query.strip()) > 1:
-            seen.add(key)
-            pairs.append({"query": query.strip(), "club_id": club_id})
+        q = query.strip()
+        if len(q) > 1 and (q, club_id) not in seen:
+            seen.add((q, club_id))
+            pairs.append({"query": q, "club_id": club_id})
 
     for club in clubs:
-        cid = club["id"]
-        name = club["name"]
-        desc = club.get("description") or ""
+        cid       = club["id"]
+        name      = club["name"]
+        desc      = club.get("description") or ""
+        category  = club.get("club_category", "")
+        affil     = club.get("club_affiliation", "")
+        univ      = club.get("university_code", "")
+        recs      = club.get("recruitments", [])
 
-        # 1. 클럽 이름 그대로 (띄어쓰기 정규화)
+        # ── 1. 동아리 이름 ───────────────────────────────────────
         add(name, cid)
-
-        # 2. 영어 이름이면 "XX 동아리" 형태 추가
         if is_english_name(name):
             add(f"{name} 동아리", cid)
 
-        # 3. 설명 첫 문장 (사용자가 설명 읽고 검색하는 경우)
-        if desc:
-            sentences = split_sentences(desc)
-            if sentences:
-                first = sentences[0]
-                if len(first) < 120:
-                    add(first, cid)
+        # ── 2. 설명 문장 (최대 4문장) ────────────────────────────
+        for s in split_sentences(desc)[:4]:
+            add(s, cid)
 
-        # 4. 설명 두 번째 문장 (첫 문장이 동아리 소개, 두 번째가 활동 설명인 경우가 많음)
-        if desc:
-            sentences = split_sentences(desc)
-            if len(sentences) >= 2:
-                second = sentences[1]
-                if len(second) < 100:
-                    add(second, cid)
+        # ── 3. 카테고리 기반 ─────────────────────────────────────
+        for q in CATEGORY_QUERIES.get(category, []):
+            add(f"{q} 동아리", cid)
+            # 학교 + 카테고리 조합
+            for uq in UNIVERSITY_QUERIES.get(univ, []):
+                add(f"{uq} {q} 동아리", cid)
+
+        # ── 4. 소속 기반 ─────────────────────────────────────────
+        for q in AFFILIATION_QUERIES.get(affil, []):
+            add(q, cid)
+            add(f"{name} {q}", cid)
+
+        # ── 5. 학교 기반 ─────────────────────────────────────────
+        for uq in UNIVERSITY_QUERIES.get(univ, []):
+            add(f"{uq} {name}", cid)
+
+        # ── 6. 모집글 제목 ───────────────────────────────────────
+        for r in recs:
+            title = (r.get("title") or "").strip()
+            if 2 < len(title) < 80:
+                add(title, cid)
+
+        # ── 7. 모집글 내용 문장 (모집글당 최대 3문장) ───────────
+        for r in recs:
+            content = r.get("content") or ""
+            for s in split_sentences(content)[:3]:
+                add(s, cid)
+
+        # ── 8. 상시모집 ──────────────────────────────────────────
+        if any(r.get("is_always_open") for r in recs):
+            add(f"{name} 상시모집", cid)
+            add("상시모집 동아리", cid)
+            add("언제든지 지원 가능한 동아리", cid)
 
     return pairs
 
@@ -127,9 +151,13 @@ def generate_claude_pairs(clubs: list[dict]) -> list[dict]:
     print(f"\nClaude로 {len(clubs)}개 동아리 쿼리 생성 중...")
     for i, club in enumerate(clubs):
         desc = (club.get("description") or "")[:400]
+        rec_titles = [r.get("title", "") for r in club.get("recruitments", [])[:3]]
         content = f"""동아리명: {club['name']}
 카테고리: {club.get('club_category', '')}
-설명: {desc}"""
+소속: {club.get('club_affiliation', '')}
+학교: {club.get('university_code', '')}
+설명: {desc}
+모집글 제목: {', '.join(rec_titles)}"""
         try:
             response = client.messages.parse(
                 model="claude-opus-4-8",
@@ -153,6 +181,24 @@ def generate_claude_pairs(clubs: list[dict]) -> list[dict]:
     return pairs
 
 
+# 수동 고품질 쌍 (자동 생성으로 커버 안 되는 별칭·오타·의도 기반 검색어)
+CURATED_PAIRS = [
+    {"query": "스마클",               "club_id": 36},
+    {"query": "SMARCLE",             "club_id": 36},
+    {"query": "AI 동아리",            "club_id": 36},
+    {"query": "인공지능 동아리",        "club_id": 36},
+    {"query": "머신러닝 공부하는 동아리", "club_id": 36},
+    {"query": "딥러닝 스터디",          "club_id": 36},
+    {"query": "데이터사이언스 동아리",   "club_id": 36},
+    {"query": "자연어처리 NLP 배우고 싶어", "club_id": 36},
+    {"query": "캐글 대회 참가하는 동아리", "club_id": 36},
+    {"query": "AI 프로젝트 해보고 싶어", "club_id": 36},
+    {"query": "논문 리뷰 모임",         "club_id": 36},
+    {"query": "파이썬 딥러닝 공부",      "club_id": 36},
+    {"query": "AI 경진대회 나가는 동아리", "club_id": 36},
+]
+
+
 def main():
     use_claude = "--claude" in sys.argv
 
@@ -161,22 +207,13 @@ def main():
 
     print(f"동아리 수: {len(clubs)}개")
 
-    # 자동 생성 쌍
     auto_pairs = generate_auto_pairs(clubs)
     print(f"자동 생성 쌍: {len(auto_pairs)}개")
 
-    # 수동 curated 쌍 (club_id 유효성 확인)
     valid_ids = {c["id"] for c in clubs}
-    curated = []
-    for p in CURATED_PAIRS:
-        if p["club_id"] in valid_ids:
-            curated.append(p)
-        else:
-            print(f"  경고: club_id {p['club_id']} 없음 — '{p['query']}' 건너뜀")
-
+    curated = [p for p in CURATED_PAIRS if p["club_id"] in valid_ids]
     print(f"수동 curated 쌍: {len(curated)}개")
 
-    # 중복 제거 후 합치기 (curated 우선)
     seen = {(p["query"], p["club_id"]) for p in curated}
     combined = curated[:]
     for p in auto_pairs:
@@ -185,7 +222,6 @@ def main():
             seen.add(key)
             combined.append(p)
 
-    # Claude 쌍 추가
     if use_claude:
         claude_pairs = generate_claude_pairs(clubs)
         for p in claude_pairs:
@@ -199,8 +235,6 @@ def main():
         json.dump(combined, f, ensure_ascii=False, indent=2)
 
     print(f"\n총 {len(combined)}개 쌍 저장 → {OUTPUT_PATH}")
-    if use_claude:
-        print("다음 단계: python src/train.py")
 
 
 if __name__ == "__main__":

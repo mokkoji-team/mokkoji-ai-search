@@ -40,17 +40,27 @@ def load_clubs_from_db() -> list[dict]:
         with conn.cursor() as cur:
             cur.execute("""
                 SELECT c.id, c.name, c.club_category, c.club_affiliation,
-                       c.description, u.code AS university_code
+                       c.description, c.instagram,
+                       c.created_at, c.updated_at,
+                       u.code AS university_code
                 FROM club c
                 JOIN university u ON c.university_id = u.id
             """)
-            clubs = {row["id"]: {**row, "recruitments": []} for row in cur.fetchall()}
+            clubs = {
+                row["id"]: {
+                    **row,
+                    "created_at": str(row["created_at"]) if row.get("created_at") else None,
+                    "updated_at": str(row["updated_at"]) if row.get("updated_at") else None,
+                    "recruitments": [],
+                }
+                for row in cur.fetchall()
+            }
 
             cur.execute("""
-                SELECT club_id, title, content,
+                SELECT id, club_id, title, content,
                        is_always_recruiting,
-                       DATE(recruit_start) AS start_date,
-                       DATE(recruit_end)   AS end_date
+                       recruit_start, recruit_end,
+                       created_at, updated_at
                 FROM recruitment
             """)
             for r in cur.fetchall():
@@ -58,11 +68,14 @@ def load_clubs_from_db() -> list[dict]:
                 if cid not in clubs:
                     continue
                 clubs[cid]["recruitments"].append({
+                    "id": r["id"],
                     "title": r["title"] or "",
                     "content": r["content"] or "",
                     "is_always_open": bool(r["is_always_recruiting"]),
-                    "start_date": str(r["start_date"]) if r["start_date"] else None,
-                    "end_date": str(r["end_date"]) if r["end_date"] else None,
+                    "recruit_start": str(r["recruit_start"]) if r["recruit_start"] else None,
+                    "recruit_end": str(r["recruit_end"]) if r["recruit_end"] else None,
+                    "created_at": str(r["created_at"]) if r["created_at"] else None,
+                    "updated_at": str(r["updated_at"]) if r["updated_at"] else None,
                 })
     finally:
         conn.close()

@@ -6,28 +6,61 @@ from pathlib import Path
 from typing import Optional
 
 import numpy as np
+from kiwipiepy import Kiwi
 from rank_bm25 import BM25Okapi
 from sentence_transformers import CrossEncoder, SentenceTransformer
+
+_kiwi = Kiwi()
+
+
+_CATEGORY_KO = {
+    "ACADEMIC_CULTURAL": "학술 교양",
+    "CULTURAL_ART": "문화 예술",
+    "RELIGIOUS": "종교",
+    "SPORTS": "스포츠 체육",
+    "VOLUNTEER_SOCIAL": "봉사 사회",
+}
+_AFFILIATION_KO = {
+    "CENTRAL_CLUB": "중앙동아리",
+    "DEPARTMENT_CLUB": "학과동아리 과동아리",
+    "SMALL_GROUP": "소모임",
+}
 
 
 def club_to_text(club: dict) -> str:
     """동아리 dict → 검색 인덱싱용 텍스트. train.py와 serve.py 양쪽에서 공유."""
-    parts = [club["name"], club.get("description", "")]
+    parts = [club["name"]]
+
+    category_ko = _CATEGORY_KO.get(club.get("club_category", ""), "")
+    affiliation_ko = _AFFILIATION_KO.get(club.get("club_affiliation", ""), "")
+    if category_ko:
+        parts.append(category_ko)
+    if affiliation_ko:
+        parts.append(affiliation_ko)
+
+    if club.get("description"):
+        parts.append(club["description"])
     if club.get("tags"):
         parts.append(" ".join(club["tags"]))
+
     for r in club.get("recruitments", []):
         if r.get("is_always_open"):
             parts.append("상시모집 언제든지 지원 가능")
         if r.get("title"):
             parts.append(r["title"])
         if r.get("content"):
-            parts.append(r["content"][:300])
+            parts.append(r["content"][:500])
     return " ".join(p for p in parts if p).strip()
 
 
 def _tokenize(text: str) -> list[str]:
-    """한국어/영어 모두 단어 단위로 분리 (BM25용)."""
-    return re.findall(r'\w+', text)
+    """형태소 분석 기반 토크나이저 (BM25용). 명사·동사·형용사·영문·숫자만 추출."""
+    tokens = []
+    for token in _kiwi.tokenize(text):
+        # NNG/NNP(명사), VV(동사), VA(형용사), SL(영문), SN(숫자)
+        if token.tag.startswith(("NN", "VV", "VA", "SL", "SN")):
+            tokens.append(token.form)
+    return tokens if tokens else re.findall(r'\w+', text)
 
 
 class ClubSearchEngine:

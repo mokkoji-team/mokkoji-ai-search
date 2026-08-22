@@ -15,7 +15,9 @@ from sentence_transformers.sentence_transformer.training_args import SentenceTra
 from search import club_to_text
 
 BASE_DIR = Path(__file__).parent.parent
-BASE_MODEL = "BAAI/bge-m3"
+# 빠른 테스트: "jhgan/ko-sroberta-multitask" (MPS 가능, ~30분)
+# 야간 학습:   "BAAI/bge-m3" (use_cpu=True, ~3~5시간)
+BASE_MODEL = "jhgan/ko-sroberta-multitask"
 OUTPUT_DIR = str(BASE_DIR / "models" / "finetuned")
 CLUBS_PATH = str(BASE_DIR / "data" / "clubs.json")
 TRAIN_PAIRS_PATH = str(BASE_DIR / "data" / "train_pairs.json")
@@ -55,13 +57,13 @@ def main():
 
     args = SentenceTransformerTrainingArguments(
         output_dir=OUTPUT_DIR,
-        num_train_epochs=10,
+        num_train_epochs=3,
         per_device_train_batch_size=16,
         learning_rate=2e-5,
-        warmup_steps=0.1,
-        fp16=False,   # Mac MPS 호환
+        warmup_ratio=0.1,
+        fp16=False,
         bf16=False,
-        logging_steps=5,
+        logging_steps=10,
         save_strategy="no",
         report_to="none",
     )

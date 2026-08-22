@@ -31,7 +31,7 @@ BASE_DIR = Path(__file__).parent.parent
 
 # bge-m3: 다국어 검색 특화 임베딩 모델 (HuggingFace에서 자동 다운로드)
 # 파인튜닝된 모델이 있으면 models/finetuned/ 경로로 변경 가능
-MODEL_PATH = "BAAI/bge-m3"
+MODEL_PATH = "models/finetuned"
 
 # bge-reranker-v2-m3: 임베딩 검색 후 정밀 재정렬
 RERANKER_PATH = "BAAI/bge-reranker-v2-m3"
