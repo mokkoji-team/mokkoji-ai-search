@@ -6,6 +6,7 @@
 """
 
 import os
+import re
 from typing import Optional
 
 
@@ -24,6 +25,36 @@ def _cfg() -> Optional[dict]:
 
 def db_available() -> bool:
     return _cfg() is not None
+
+
+def load_field_limits() -> dict:
+    """DB 컬럼 타입을 읽어 varchar 최대 길이를 반환. text 타입은 None (제약 없음).
+
+    반환 형식: {"club.name": 50, "club.description": None, "recruitment.content": None, ...}
+    serve.py 시작 시 호출해 search.configure_field_limits()에 전달한다.
+    """
+    import pymysql
+    import pymysql.cursors
+
+    cfg = _cfg()
+    if cfg is None:
+        return {}
+
+    def _varchar_len(col_type: str) -> Optional[int]:
+        m = re.match(r'varchar\((\d+)\)', col_type)
+        return int(m.group(1)) if m else None
+
+    conn = pymysql.connect(**cfg, cursorclass=pymysql.cursors.DictCursor, charset="utf8mb4")
+    limits: dict = {}
+    try:
+        with conn.cursor() as cur:
+            for table in ("club", "recruitment"):
+                cur.execute(f"SHOW FULL COLUMNS FROM {table}")
+                for row in cur.fetchall():
+                    limits[f"{table}.{row['Field']}"] = _varchar_len(row["Type"])
+    finally:
+        conn.close()
+    return limits
 
 
 def load_clubs_from_db() -> list[dict]:

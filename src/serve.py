@@ -23,9 +23,9 @@ from dotenv import load_dotenv
 load_dotenv(Path(__file__).parent.parent / ".env")
 sys.path.insert(0, str(Path(__file__).parent))
 
-from search import ClubSearchEngine
+from search import ClubSearchEngine, configure_field_limits
 from query_parser import parse_query_intent
-from db_loader import db_available, load_clubs_from_db
+from db_loader import db_available, load_clubs_from_db, load_field_limits
 
 BASE_DIR = Path(__file__).parent.parent
 
@@ -45,6 +45,8 @@ engine: ClubSearchEngine | None = None
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     global engine
+    if db_available():
+        configure_field_limits(load_field_limits())
     engine = ClubSearchEngine(MODEL_PATH, reranker_path=RERANKER_PATH)
     index_dir = Path(INDEX_PATH)
     if (index_dir / "vectors.npy").exists():
@@ -70,8 +72,8 @@ def _is_recruiting(club: dict) -> bool:
     for r in club.get("recruitments", []):
         if r.get("is_always_open"):
             return True
-        start = r.get("start_date")
-        end = r.get("end_date")
+        start = r.get("recruit_start") or r.get("start_date")
+        end = r.get("recruit_end") or r.get("end_date")
         if start and end:
             try:
                 if date.fromisoformat(start) <= today <= date.fromisoformat(end):

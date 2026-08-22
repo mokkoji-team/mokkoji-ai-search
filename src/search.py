@@ -26,10 +26,25 @@ _AFFILIATION_KO = {
     "SMALL_GROUP": "소모임",
 }
 
+# DB 컬럼 최대 길이. configure_field_limits()로 서버 시작 시 주입된다.
+# None = 제약 없음 (text 타입). varchar(N)이면 N.
+_FIELD_LIMITS: dict = {}
+
+
+def configure_field_limits(limits: dict) -> None:
+    """DB 컬럼 제약 조건을 주입. serve.py lifespan에서 load_field_limits() 결과를 넘긴다."""
+    global _FIELD_LIMITS
+    _FIELD_LIMITS = limits
+
+
+def _lim(key: str, value: str) -> str:
+    n = _FIELD_LIMITS.get(key)
+    return value[:n] if n else value
+
 
 def club_to_text(club: dict) -> str:
     """동아리 dict → 검색 인덱싱용 텍스트. train.py와 serve.py 양쪽에서 공유."""
-    parts = [club["name"]]
+    parts = [_lim("club.name", club["name"])]
 
     category_ko = _CATEGORY_KO.get(club.get("club_category", ""), "")
     affiliation_ko = _AFFILIATION_KO.get(club.get("club_affiliation", ""), "")
@@ -39,17 +54,32 @@ def club_to_text(club: dict) -> str:
         parts.append(affiliation_ko)
 
     if club.get("description"):
-        parts.append(club["description"])
+        parts.append(_lim("club.description", club["description"]))
     if club.get("tags"):
         parts.append(" ".join(club["tags"]))
+
+    # 인스타그램 핸들 추출 (URL에서 @username 부분만)
+    instagram = club.get("instagram") or ""
+    if instagram:
+        handle = instagram.rstrip("/").split("/")[-1]
+        if handle:
+            parts.append(handle)
 
     for r in club.get("recruitments", []):
         if r.get("is_always_open"):
             parts.append("상시모집 언제든지 지원 가능")
         if r.get("title"):
-            parts.append(r["title"])
+            parts.append(_lim("recruitment.title", r["title"]))
         if r.get("content"):
-            parts.append(r["content"][:500])
+            parts.append(_lim("recruitment.content", r["content"]))
+        # 모집 기간 텍스트
+        start = r.get("recruit_start")
+        end = r.get("recruit_end")
+        if start and end:
+            parts.append(f"모집기간 {str(start)[:10]} ~ {str(end)[:10]}")
+        elif start:
+            parts.append(f"모집시작 {str(start)[:10]}")
+
     return " ".join(p for p in parts if p).strip()
 
 
