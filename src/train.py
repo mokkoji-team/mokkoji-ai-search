@@ -63,6 +63,7 @@ def main():
         warmup_ratio=0.1,
         fp16=False,
         bf16=False,
+        use_cpu=True,
         logging_steps=10,
         save_strategy="no",
         report_to="none",

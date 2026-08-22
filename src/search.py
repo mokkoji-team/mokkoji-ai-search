@@ -2,6 +2,7 @@
 
 import json
 import re
+from functools import lru_cache
 from pathlib import Path
 from typing import Optional
 
@@ -11,6 +12,62 @@ from rank_bm25 import BM25Okapi
 from sentence_transformers import CrossEncoder, SentenceTransformer
 
 _kiwi = Kiwi()
+
+_CHO = ['ㄱ','ㄲ','ㄴ','ㄷ','ㄸ','ㄹ','ㅁ','ㅂ','ㅃ','ㅅ','ㅆ','ㅇ','ㅈ','ㅉ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ']
+_JUNG = ['ㅏ','ㅐ','ㅑ','ㅒ','ㅓ','ㅔ','ㅕ','ㅖ','ㅗ','ㅘ','ㅙ','ㅚ','ㅛ','ㅜ','ㅝ','ㅞ','ㅟ','ㅠ','ㅡ','ㅢ','ㅣ']
+_JONG = ['','ㄱ','ㄲ','ㄳ','ㄴ','ㄵ','ㄶ','ㄷ','ㄹ','ㄺ','ㄻ','ㄼ','ㄽ','ㄾ','ㄿ','ㅀ','ㅁ','ㅂ','ㅄ','ㅅ','ㅆ','ㅇ','ㅈ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ']
+# 복합 종성 → 구성 단자음 (IME가 두 자음을 하나로 합칠 때 발생하는 오타 처리)
+_COMPOUND_JONG = {
+    'ㄳ': ['ㄱ', 'ㅅ'], 'ㄵ': ['ㄴ', 'ㅈ'], 'ㄶ': ['ㄴ', 'ㅎ'],
+    'ㄺ': ['ㄹ', 'ㄱ'], 'ㄻ': ['ㄹ', 'ㅁ'], 'ㄼ': ['ㄹ', 'ㅂ'],
+    'ㄽ': ['ㄹ', 'ㅅ'], 'ㄾ': ['ㄹ', 'ㅌ'], 'ㄿ': ['ㄹ', 'ㅍ'],
+    'ㅀ': ['ㄹ', 'ㅎ'], 'ㅄ': ['ㅂ', 'ㅅ'],
+}
+
+
+def _decompose(ch: str):
+    code = ord(ch) - 0xAC00
+    if not (0 <= code <= 11171):
+        return None
+    return _CHO[code // 588], _JUNG[(code // 28) % 21], _JONG[code % 28]
+
+
+def _compose(cho: str, jung: str, jong: str) -> str:
+    try:
+        return chr(0xAC00 + _CHO.index(cho) * 588 + _JUNG.index(jung) * 28 + _JONG.index(jong))
+    except ValueError:
+        return cho + jung + jong
+
+
+@lru_cache(maxsize=512)
+def correct_spelling(query: str) -> str:
+    """IME 복합 종성 오타 교정 (ㄳ→ㄱ 등). 외부 API 불필요.
+
+    한국어 IME가 ㄱ+ㅅ를 ㄳ으로 합칠 때 생기는 오타만 처리한다.
+    3음절 이상 OOV는 고유명사로 판단해 교정하지 않는다.
+    """
+    tokens = _kiwi.tokenize(query)
+    oov_tokens = [t for t in tokens if t.oov]
+    if not oov_tokens:
+        return query
+    # 3음절 이상 OOV는 고유명사로 판단, 교정 건너뜀
+    if any(len(t.form) >= 3 for t in oov_tokens):
+        return query
+
+    chars = list(query)
+    for i, ch in enumerate(chars):
+        jamo = _decompose(ch)
+        if jamo is None:
+            continue
+        cho, jung, jong = jamo
+        # 복합 종성 분해 시도 (ㄳ→ㄱ/ㅅ 등 IME 오타 — 가장 먼저 시도)
+        for simple_jong in _COMPOUND_JONG.get(jong, []):
+            trial = ''.join(chars[:i] + [_compose(cho, jung, simple_jong)] + chars[i+1:])
+            if not any(t.oov for t in _kiwi.tokenize(trial)):
+                print(f"[spell] '{query}' → '{trial}'")
+                return trial
+
+    return query
 
 
 _CATEGORY_KO = {
@@ -126,8 +183,11 @@ class ClubSearchEngine:
             clubs = json.load(f)
         self.index(clubs)
 
-    def search(self, query: str, top_k: int = 5, filter_fn=None, alpha: float = 0.7) -> list[dict]:
-        """Hybrid Search: 임베딩(alpha) + BM25(1-alpha) 점수를 결합."""
+    def search(self, query: str, top_k: int | None = None, filter_fn=None, alpha: float = 0.7) -> list[dict]:
+        """Hybrid Search: 임베딩(alpha) + BM25(1-alpha) 점수를 결합.
+
+        top_k=None이면 전체 풀을 점수 순으로 반환 (threshold 필터는 호출부에서 처리).
+        """
         if self.vectors is None:
             raise RuntimeError("index() 또는 load_index()를 먼저 실행하세요.")
 
@@ -157,10 +217,12 @@ class ClubSearchEngine:
         # 합산
         hybrid_scores = alpha * norm_embed + (1 - alpha) * norm_bm25
 
-        top_indices = np.argsort(hybrid_scores)[::-1][:top_k]
+        sorted_indices = np.argsort(hybrid_scores)[::-1]
+        if top_k is not None:
+            sorted_indices = sorted_indices[:top_k]
         return [
             {"club": pool_clubs[i], "score": float(hybrid_scores[i])}
-            for i in top_indices
+            for i in sorted_indices
         ]
 
     def rerank(self, query: str, candidates: list[dict]) -> list[dict]:

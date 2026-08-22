@@ -5,7 +5,7 @@
 
 Spring Boot 연동: ClubService에서 AI 검색 결과(club_id 목록)를 받아 DB 조회
   POST http://localhost:8000/search
-  Body: {"query": "스마클", "top_k": 10}
+  Body: {"query": "스마클", "threshold": 0.5, "max_results": 20}
   Response: {"results": [{"club_id": 1, "score": 0.92}, ...], "query": "스마클"}
 """
 
@@ -23,7 +23,7 @@ from dotenv import load_dotenv
 load_dotenv(Path(__file__).parent.parent / ".env")
 sys.path.insert(0, str(Path(__file__).parent))
 
-from search import ClubSearchEngine, configure_field_limits
+from search import ClubSearchEngine, configure_field_limits, correct_spelling
 from query_parser import parse_query_intent
 from db_loader import db_available, load_clubs_from_db, load_field_limits
 
@@ -66,6 +66,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title="모꼬지 AI 검색", version="2.0.0", lifespan=lifespan)
 
 
+
 def _is_recruiting(club: dict) -> bool:
     """상시모집이거나 오늘이 모집기간 안에 있으면 True."""
     today = date.today()
@@ -85,9 +86,9 @@ def _is_recruiting(club: dict) -> bool:
 
 class SearchRequest(BaseModel):
     query: str
-    top_k: int = 10
-    threshold: float = 0.4  # 이 점수 미만은 결과에서 제외
-    university_code: str | None = None  # 특정 학교 동아리만 검색 (예: "SEJONG", "HANYANG")
+    threshold: float = 0.5          # 이 점수 미만은 결과에서 제외
+    max_results: int | None = None  # 반환 상한 (None이면 threshold 이상 전부 반환)
+    university_code: str | None = None
 
 
 class SearchResult(BaseModel):
@@ -129,13 +130,14 @@ async def natural_search(req: NaturalSearchRequest):
     if engine is None or engine.vectors is None:
         raise HTTPException(status_code=503, detail="검색 엔진이 준비되지 않았습니다")
 
+    corrected = correct_spelling(req.query)
     try:
-        intent = parse_query_intent(req.query)
+        intent = parse_query_intent(corrected)
     except Exception as e:
         print(f"[query_parser] 파싱 실패, 원본 쿼리로 폴백: {e}")
-        intent = {"semantic_query": req.query, "sort_by": None, "sort_order": "desc", "category_filter": None}
+        intent = {"semantic_query": corrected, "sort_by": None, "sort_order": "desc", "category_filter": None}
 
-    semantic_query = intent["semantic_query"] or req.query
+    semantic_query = intent["semantic_query"] or corrected
 
     # 필터가 있으면 후보를 더 뽑되, 리랭커 부담을 줄이기 위해 상한 30개로 제한
     needs_post_filter = bool(intent.get("sort_by") or intent.get("category_filter"))
@@ -175,11 +177,13 @@ async def search(req: SearchRequest):
     if engine is None or engine.vectors is None:
         raise HTTPException(status_code=503, detail="검색 엔진이 준비되지 않았습니다")
     filter_fn = (lambda c: c.get("university_code") == req.university_code) if req.university_code else None
-    raw = engine.search(req.query, top_k=req.top_k, filter_fn=filter_fn)
+    raw = engine.search(correct_spelling(req.query), top_k=None, filter_fn=filter_fn)
+    raw = [r for r in raw if r["score"] >= req.threshold]
+    if req.max_results is not None:
+        raw = raw[:req.max_results]
     results = [
         SearchResult(club_id=r["club"]["id"], club_name=r["club"]["name"], score=r["score"])
         for r in raw
-        if r["score"] >= req.threshold
     ]
     return SearchResponse(results=results, query=req.query)
 

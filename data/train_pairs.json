@@ -38742,5 +38742,4789 @@
   {
     "query": "현재는 재학생 중심으로 시작하며, 추후 중앙동아리 승인을 목표로 운영할 예정입니다",
     "club_id": 99
+  },
+  {
+    "query": "고전음악회 동아리",
+    "club_id": 284
+  },
+  {
+    "query": "클래식 음악 동아리",
+    "club_id": 284
+  },
+  {
+    "query": "고전음악회 모집",
+    "club_id": 284
+  },
+  {
+    "query": "중앙동아리 고전음악회",
+    "club_id": 284
+  },
+  {
+    "query": "고전음악 감상 동아리",
+    "club_id": 284
+  },
+  {
+    "query": "클래식 감상 동아리",
+    "club_id": 284
+  },
+  {
+    "query": "여행동아리",
+    "club_id": 285
+  },
+  {
+    "query": "유스호스텔 모집",
+    "club_id": 285
+  },
+  {
+    "query": "유스호스텔 여행",
+    "club_id": 285
+  },
+  {
+    "query": "여행하는 동아리",
+    "club_id": 285
+  },
+  {
+    "query": "유스호스텔 신입",
+    "club_id": 285
+  },
+  {
+    "query": "지적장애인 봉사",
+    "club_id": 286
+  },
+  {
+    "query": "키비탄 동아리",
+    "club_id": 286
+  },
+  {
+    "query": "한양대 봉사",
+    "club_id": 286
+  },
+  {
+    "query": "장애인 봉사 모집",
+    "club_id": 286
+  },
+  {
+    "query": "키비탄 모집",
+    "club_id": 286
+  },
+  {
+    "query": "지적장애인 봉사 모임",
+    "club_id": 286
+  },
+  {
+    "query": "한양기우회 바둑",
+    "club_id": 287
+  },
+  {
+    "query": "한양기우회 모집",
+    "club_id": 287
+  },
+  {
+    "query": "한양대 바둑 동아리",
+    "club_id": 287
+  },
+  {
+    "query": "바둑 초보 모집",
+    "club_id": 287
+  },
+  {
+    "query": "한양기우회 모임",
+    "club_id": 287
+  },
+  {
+    "query": "보드게임 동아리",
+    "club_id": 287
+  },
+  {
+    "query": "한양대학교 봉사 동아리",
+    "club_id": 288
+  },
+  {
+    "query": "한양어린이학교 교육 봉사",
+    "club_id": 288
+  },
+  {
+    "query": "한양대 어린이 봉사",
+    "club_id": 288
+  },
+  {
+    "query": "한양대 병원 봉사 동아리",
+    "club_id": 288
+  },
+  {
+    "query": "한양대학교 병원학교 봉사",
+    "club_id": 288
+  },
+  {
+    "query": "한양대 봉사 동아리 모집",
+    "club_id": 288
+  },
+  {
+    "query": "한양대 환경봉사",
+    "club_id": 289
+  },
+  {
+    "query": "한양대 봉사동아리",
+    "club_id": 289
+  },
+  {
+    "query": "한양대 환경봉사 모집",
+    "club_id": 289
+  },
+  {
+    "query": "한양대 환경봉사 모임",
+    "club_id": 289
+  },
+  {
+    "query": "한양대 환경 봉사 동아리",
+    "club_id": 289
+  },
+  {
+    "query": "한양대 환경봉사 모집 중",
+    "club_id": 289
+  },
+  {
+    "query": "갈대피리 동아리",
+    "club_id": 290
+  },
+  {
+    "query": "갈대피리 모임",
+    "club_id": 290
+  },
+  {
+    "query": "갈대피리 스터디",
+    "club_id": 290
+  },
+  {
+    "query": "한양대 음악 동아리",
+    "club_id": 290
+  },
+  {
+    "query": "갈대피리 신입",
+    "club_id": 290
+  },
+  {
+    "query": "갈대피리 연습",
+    "club_id": 290
+  },
+  {
+    "query": "한양극예술연구회",
+    "club_id": 291
+  },
+  {
+    "query": "들꽃 연극동아리",
+    "club_id": 291
+  },
+  {
+    "query": "중앙연극동아리",
+    "club_id": 291
+  },
+  {
+    "query": "한양대 연극",
+    "club_id": 291
+  },
+  {
+    "query": "드라마 배우",
+    "club_id": 291
+  },
+  {
+    "query": "연극스터디",
+    "club_id": 291
+  },
+  {
+    "query": "락 음악",
+    "club_id": 292
+  },
+  {
+    "query": "밴드 활동",
+    "club_id": 292
+  },
+  {
+    "query": "한양대 락",
+    "club_id": 292
+  },
+  {
+    "query": "연합 동아리",
+    "club_id": 292
+  },
+  {
+    "query": "노천극장",
+    "club_id": 292
+  },
+  {
+    "query": "클래식 기타 동아리",
+    "club_id": 293
+  },
+  {
+    "query": "샤르만트 동아리",
+    "club_id": 293
+  },
+  {
+    "query": "중앙 기타 동아리",
+    "club_id": 293
+  },
+  {
+    "query": "클래식 기타 모임",
+    "club_id": 293
+  },
+  {
+    "query": "샤르만트 신입",
+    "club_id": 293
+  },
+  {
+    "query": "클래식 기타 신입",
+    "club_id": 293
+  },
+  {
+    "query": "밴드 모임",
+    "club_id": 294
+  },
+  {
+    "query": "민중가요 배우기",
+    "club_id": 294
+  },
+  {
+    "query": "중앙동아리 밴드",
+    "club_id": 294
+  },
+  {
+    "query": "음악 스터디",
+    "club_id": 294
+  },
+  {
+    "query": "밴드 활동",
+    "club_id": 294
+  },
+  {
+    "query": "노래 동아리",
+    "club_id": 294
+  },
+  {
+    "query": "한양대 밴드",
+    "club_id": 295
+  },
+  {
+    "query": "소크나 모집",
+    "club_id": 295
+  },
+  {
+    "query": "음악 동아리 모집",
+    "club_id": 295
+  },
+  {
+    "query": "중앙 음악 동아리",
+    "club_id": 295
+  },
+  {
+    "query": "연합 밴드",
+    "club_id": 295
+  },
+  {
+    "query": "소리로 크는 나무 신입",
+    "club_id": 295
+  },
+  {
+    "query": "한양대 버스킹",
+    "club_id": 296
+  },
+  {
+    "query": "버스킹 동아리",
+    "club_id": 296
+  },
+  {
+    "query": "소리울림 모집",
+    "club_id": 296
+  },
+  {
+    "query": "한양대 어쿠스틱 밴드",
+    "club_id": 296
+  },
+  {
+    "query": "버스킹 공연 동아리",
+    "club_id": 296
+  },
+  {
+    "query": "한양대 음악 모임",
+    "club_id": 296
+  },
+  {
+    "query": "하나클랑 오케스트라",
+    "club_id": 297
+  },
+  {
+    "query": "하나클랑 모집",
+    "club_id": 297
+  },
+  {
+    "query": "하나클랑 연습",
+    "club_id": 297
+  },
+  {
+    "query": "하나클랑 연주회",
+    "club_id": 297
+  },
+  {
+    "query": "하나클랑 가입",
+    "club_id": 297
+  },
+  {
+    "query": "하나클랑 연습회",
+    "club_id": 297
+  },
+  {
+    "query": "한양대 중앙댄스동아리",
+    "club_id": 298
+  },
+  {
+    "query": "ARS AMANDI 가입",
+    "club_id": 298
+  },
+  {
+    "query": "스트릿 댄스 동아리",
+    "club_id": 298
+  },
+  {
+    "query": "방송댄스 모집",
+    "club_id": 298
+  },
+  {
+    "query": "한양대 댄스동아리",
+    "club_id": 298
+  },
+  {
+    "query": "ARS AMANDI 신입생",
+    "club_id": 298
+  },
+  {
+    "query": "한양대 합창동아리",
+    "club_id": 299
+  },
+  {
+    "query": "LEE",
+    "club_id": 299
+  },
+  {
+    "query": "중앙 합창 모집",
+    "club_id": 299
+  },
+  {
+    "query": "한양대 GLEE 모집",
+    "club_id": 299
+  },
+  {
+    "query": "한양대 합창 모임",
+    "club_id": 299
+  },
+  {
+    "query": "LEE 모임",
+    "club_id": 299
+  },
+  {
+    "query": "마술 동아리",
+    "club_id": 300
+  },
+  {
+    "query": "한양대학교 마술",
+    "club_id": 300
+  },
+  {
+    "query": "Magic-i 모임",
+    "club_id": 300
+  },
+  {
+    "query": "한양 마술스터디",
+    "club_id": 300
+  },
+  {
+    "query": "마술 초보자 모집",
+    "club_id": 300
+  },
+  {
+    "query": "한양 중앙동아리",
+    "club_id": 300
+  },
+  {
+    "query": "힙합 동아리",
+    "club_id": 301
+  },
+  {
+    "query": "SHOWDOWN 모집",
+    "club_id": 301
+  },
+  {
+    "query": "중앙힙합동아리",
+    "club_id": 301
+  },
+  {
+    "query": "힙합 연합 동아리",
+    "club_id": 301
+  },
+  {
+    "query": "힙합 모임",
+    "club_id": 301
+  },
+  {
+    "query": "SHOWDOWN 가입",
+    "club_id": 301
+  },
+  {
+    "query": "연극 동아리",
+    "club_id": 302
+  },
+  {
+    "query": "중앙 연극 동아리",
+    "club_id": 302
+  },
+  {
+    "query": "민족극회",
+    "club_id": 302
+  },
+  {
+    "query": "새벽 동아리",
+    "club_id": 302
+  },
+  {
+    "query": "창작 연극",
+    "club_id": 302
+  },
+  {
+    "query": "연극 스터디",
+    "club_id": 302
+  },
+  {
+    "query": "미술 동아리",
+    "club_id": 304
+  },
+  {
+    "query": "순수미술 동아리",
+    "club_id": 304
+  },
+  {
+    "query": "그리아미 찾기",
+    "club_id": 304
+  },
+  {
+    "query": "미술 스터디",
+    "club_id": 304
+  },
+  {
+    "query": "미술 모임",
+    "club_id": 304
+  },
+  {
+    "query": "그림 배우는 곳",
+    "club_id": 304
+  },
+  {
+    "query": "시사만화 동아리",
+    "club_id": 305
+  },
+  {
+    "query": "오타쿠 동아리",
+    "club_id": 305
+  },
+  {
+    "query": "만화 팟토글",
+    "club_id": 305
+  },
+  {
+    "query": "시사 토론 동아리",
+    "club_id": 305
+  },
+  {
+    "query": "만화스터디",
+    "club_id": 305
+  },
+  {
+    "query": "그릴마당 동아리",
+    "club_id": 305
+  },
+  {
+    "query": "문학 합평회",
+    "club_id": 306
+  },
+  {
+    "query": "문학 워크숍",
+    "club_id": 306
+  },
+  {
+    "query": "라미문학회 가입",
+    "club_id": 306
+  },
+  {
+    "query": "문학 모임",
+    "club_id": 306
+  },
+  {
+    "query": "문학회 합평",
+    "club_id": 306
+  },
+  {
+    "query": "문학 스토리텔링",
+    "club_id": 306
+  },
+  {
+    "query": "목소리 연기",
+    "club_id": 307
+  },
+  {
+    "query": "성우 모임",
+    "club_id": 307
+  },
+  {
+    "query": "더빙 동아리",
+    "club_id": 307
+  },
+  {
+    "query": "냥보이스 모집",
+    "club_id": 307
+  },
+  {
+    "query": "목소리 연습",
+    "club_id": 307
+  },
+  {
+    "query": "더빙 스터디",
+    "club_id": 307
+  },
+  {
+    "query": "패션동아리 모집",
+    "club_id": 308
+  },
+  {
+    "query": "하이제닉 동아리",
+    "club_id": 308
+  },
+  {
+    "query": "패션동아리 하이제닉",
+    "club_id": 308
+  },
+  {
+    "query": "디자인 동아리 모집",
+    "club_id": 308
+  },
+  {
+    "query": "패션 웹매거진",
+    "club_id": 308
+  },
+  {
+    "query": "패션 콘텐츠 제작",
+    "club_id": 308
+  },
+  {
+    "query": "서예 동아리",
+    "club_id": 309
+  },
+  {
+    "query": "한양서예회 찾기",
+    "club_id": 309
+  },
+  {
+    "query": "캘리그래피 모임",
+    "club_id": 309
+  },
+  {
+    "query": "서예 배우는 곳",
+    "club_id": 309
+  },
+  {
+    "query": "한양대학교 서예회",
+    "club_id": 309
+  },
+  {
+    "query": "나만의 작품 만들기",
+    "club_id": 309
+  },
+  {
+    "query": "한양대학교 사진 동아리",
+    "club_id": 310
+  },
+  {
+    "query": "중앙 사진 동아리",
+    "club_id": 310
+  },
+  {
+    "query": "하이포 동아리",
+    "club_id": 310
+  },
+  {
+    "query": "한양대학교 중앙 사진 모임",
+    "club_id": 310
+  },
+  {
+    "query": "한양 사진스터디",
+    "club_id": 310
+  },
+  {
+    "query": "한양 중앙 사진 배우는",
+    "club_id": 310
+  },
+  {
+    "query": "천주교 동아리",
+    "club_id": 311
+  },
+  {
+    "query": "가톨릭 모임",
+    "club_id": 311
+  },
+  {
+    "query": "신앙 모임",
+    "club_id": 311
+  },
+  {
+    "query": "가톨릭스터디",
+    "club_id": 311
+  },
+  {
+    "query": "한양가톨릭학생회",
+    "club_id": 311
+  },
+  {
+    "query": "천주교 학생회",
+    "club_id": 311
+  },
+  {
+    "query": "한양대 기독교",
+    "club_id": 312
+  },
+  {
+    "query": "네비게이토 모임",
+    "club_id": 312
+  },
+  {
+    "query": "중앙동아리 크리스천",
+    "club_id": 312
+  },
+  {
+    "query": "신앙생활 동아리",
+    "club_id": 312
+  },
+  {
+    "query": "한양대 크리스천",
+    "club_id": 312
+  },
+  {
+    "query": "네비게이토 신입생",
+    "club_id": 312
+  },
+  {
+    "query": "불교 모임",
+    "club_id": 313
+  },
+  {
+    "query": "불교 스터디",
+    "club_id": 313
+  },
+  {
+    "query": "불교 법회",
+    "club_id": 313
+  },
+  {
+    "query": "힐링 모임",
+    "club_id": 313
+  },
+  {
+    "query": "불교 신앙",
+    "club_id": 313
+  },
+  {
+    "query": "불교 대학생",
+    "club_id": 313
+  },
+  {
+    "query": "한사랑선교회 모임",
+    "club_id": 314
+  },
+  {
+    "query": "기독교 동아리",
+    "club_id": 314
+  },
+  {
+    "query": "기독교 신앙",
+    "club_id": 314
+  },
+  {
+    "query": "한사랑선교회 스터디",
+    "club_id": 314
+  },
+  {
+    "query": "한양플라자 5층 모임",
+    "club_id": 314
+  },
+  {
+    "query": "신앙 모임",
+    "club_id": 314
+  },
+  {
+    "query": "기독교 동아리",
+    "club_id": 315
+  },
+  {
+    "query": "CCC 모임",
+    "club_id": 315
+  },
+  {
+    "query": "한양대 채플",
+    "club_id": 315
+  },
+  {
+    "query": "CCC 순모임",
+    "club_id": 315
+  },
+  {
+    "query": "한양대 DT",
+    "club_id": 315
+  },
+  {
+    "query": "기독교 동아리",
+    "club_id": 316
+  },
+  {
+    "query": "ESF 모임",
+    "club_id": 316
+  },
+  {
+    "query": "ESF 스터디",
+    "club_id": 316
+  },
+  {
+    "query": "예배하는 곳",
+    "club_id": 316
+  },
+  {
+    "query": "신앙 공동체",
+    "club_id": 316
+  },
+  {
+    "query": "ESF 활동",
+    "club_id": 316
+  },
+  {
+    "query": "한양대 러닝 동아리",
+    "club_id": 318
+  },
+  {
+    "query": "러너스하이 모집",
+    "club_id": 318
+  },
+  {
+    "query": "한양대 러닝 모임",
+    "club_id": 318
+  },
+  {
+    "query": "한양대 러닝 스터디",
+    "club_id": 318
+  },
+  {
+    "query": "한양대 러닝 동아리 모임",
+    "club_id": 318
+  },
+  {
+    "query": "한양대 둥실러닝",
+    "club_id": 318
+  },
+  {
+    "query": "한양대 미식축구부",
+    "club_id": 319
+  },
+  {
+    "query": "LIONS 미식축구",
+    "club_id": 319
+  },
+  {
+    "query": "한양대 라이온스",
+    "club_id": 319
+  },
+  {
+    "query": "미식축구 모임",
+    "club_id": 319
+  },
+  {
+    "query": "LIONS 신입 모집",
+    "club_id": 319
+  },
+  {
+    "query": "암벽등반",
+    "club_id": 320
+  },
+  {
+    "query": "산행 모임",
+    "club_id": 320
+  },
+  {
+    "query": "스터디",
+    "club_id": 320
+  },
+  {
+    "query": "스포츠클라이밍",
+    "club_id": 320
+  },
+  {
+    "query": "한양대 야구부",
+    "club_id": 321
+  },
+  {
+    "query": "중앙야구동아리",
+    "club_id": 321
+  },
+  {
+    "query": "불새 야구모임",
+    "club_id": 321
+  },
+  {
+    "query": "야구스터디",
+    "club_id": 321
+  },
+  {
+    "query": "야구콘텐츠팀",
+    "club_id": 321
+  },
+  {
+    "query": "한양대 야구연습",
+    "club_id": 321
+  },
+  {
+    "query": "한양대 탁구 동아리",
+    "club_id": 322
+  },
+  {
+    "query": "중앙동아리 탁구",
+    "club_id": 322
+  },
+  {
+    "query": "오렌지볼 훈련",
+    "club_id": 322
+  },
+  {
+    "query": "한양대 탁구 모임",
+    "club_id": 322
+  },
+  {
+    "query": "한양대 탁구 스터디",
+    "club_id": 322
+  },
+  {
+    "query": "한양대 탁구 신입",
+    "club_id": 322
+  },
+  {
+    "query": "해양 스포츠 동아리",
+    "club_id": 323
+  },
+  {
+    "query": "요트 부대",
+    "club_id": 323
+  },
+  {
+    "query": "요트 모임",
+    "club_id": 323
+  },
+  {
+    "query": "해양 스포츠 모임",
+    "club_id": 323
+  },
+  {
+    "query": "HYYC 요트부",
+    "club_id": 323
+  },
+  {
+    "query": "한양대학교 유도",
+    "club_id": 324
+  },
+  {
+    "query": "한양유도회 모집",
+    "club_id": 324
+  },
+  {
+    "query": "한양 유도 동아리",
+    "club_id": 324
+  },
+  {
+    "query": "한양대학교 유도 동아리",
+    "club_id": 324
+  },
+  {
+    "query": "한양 유도회",
+    "club_id": 324
+  },
+  {
+    "query": "유도 모임",
+    "club_id": 324
+  },
+  {
+    "query": "자전거 동아리",
+    "club_id": 325
+  },
+  {
+    "query": "하이시클 모임",
+    "club_id": 325
+  },
+  {
+    "query": "자전거 모임",
+    "club_id": 325
+  },
+  {
+    "query": "자전거 배우는",
+    "club_id": 325
+  },
+  {
+    "query": "하이시클 신입",
+    "club_id": 325
+  },
+  {
+    "query": "자전거 스토리",
+    "club_id": 325
+  },
+  {
+    "query": "배드민턴 동아리",
+    "club_id": 326
+  },
+  {
+    "query": "하이민턴 모집",
+    "club_id": 326
+  },
+  {
+    "query": "하이민턴 운동",
+    "club_id": 326
+  },
+  {
+    "query": "하이민턴 모임장소",
+    "club_id": 326
+  },
+  {
+    "query": "하이민턴 대운동장",
+    "club_id": 326
+  },
+  {
+    "query": "하이민턴 정기모임",
+    "club_id": 326
+  },
+  {
+    "query": "테니스 동아리",
+    "club_id": 327
+  },
+  {
+    "query": "HYTC 모임",
+    "club_id": 327
+  },
+  {
+    "query": "테니스 스터디",
+    "club_id": 327
+  },
+  {
+    "query": "테니스 하는 동아리",
+    "club_id": 327
+  },
+  {
+    "query": "테니스 연습하는 곳",
+    "club_id": 327
+  },
+  {
+    "query": "테니스 모임",
+    "club_id": 327
+  },
+  {
+    "query": "한양 수영 동아리",
+    "club_id": 328
+  },
+  {
+    "query": "IMSH 수영 동아리",
+    "club_id": 328
+  },
+  {
+    "query": "수영대회 가는 동아리",
+    "club_id": 328
+  },
+  {
+    "query": "수영 훈련 동아리",
+    "club_id": 328
+  },
+  {
+    "query": "한양대학교 수영 동아리",
+    "club_id": 328
+  },
+  {
+    "query": "IMSH 동아리 가입",
+    "club_id": 328
+  },
+  {
+    "query": "보드스터디",
+    "club_id": 329
+  },
+  {
+    "query": "웨이크보드 스터디",
+    "club_id": 329
+  },
+  {
+    "query": "스케이트보드 모임",
+    "club_id": 329
+  },
+  {
+    "query": "보드 활동 모임",
+    "club_id": 329
+  },
+  {
+    "query": "보드 동아리",
+    "club_id": 329
+  },
+  {
+    "query": "한양대 중앙농구",
+    "club_id": 330
+  },
+  {
+    "query": "15ers 농구 동아리",
+    "club_id": 330
+  },
+  {
+    "query": "한양대 농구 동아리",
+    "club_id": 330
+  },
+  {
+    "query": "중앙대 농구 모집",
+    "club_id": 330
+  },
+  {
+    "query": "15ers 농구 신입",
+    "club_id": 330
+  },
+  {
+    "query": "농구대회하는 동아리",
+    "club_id": 330
+  },
+  {
+    "query": "한양대 배구",
+    "club_id": 331
+  },
+  {
+    "query": "한배짱 동아리",
+    "club_id": 331
+  },
+  {
+    "query": "배구하는 곳",
+    "club_id": 331
+  },
+  {
+    "query": "한양대 배구 모집",
+    "club_id": 331
+  },
+  {
+    "query": "한배짱 모집",
+    "club_id": 331
+  },
+  {
+    "query": "배구 스터디",
+    "club_id": 331
+  },
+  {
+    "query": "한양대 국궁",
+    "club_id": 332
+  },
+  {
+    "query": "한양대 심궁회 모집",
+    "club_id": 332
+  },
+  {
+    "query": "한양대 국궁 동아리",
+    "club_id": 332
+  },
+  {
+    "query": "한양대 심궁회 모집공고",
+    "club_id": 332
+  },
+  {
+    "query": "한양대 심궁회 신입회원",
+    "club_id": 332
+  },
+  {
+    "query": "태권도",
+    "club_id": 333
+  },
+  {
+    "query": "한양대 태권도",
+    "club_id": 333
+  },
+  {
+    "query": "태권도 동아리",
+    "club_id": 333
+  },
+  {
+    "query": "하랑 태권도",
+    "club_id": 333
+  },
+  {
+    "query": "한양하랑 모집",
+    "club_id": 333
+  },
+  {
+    "query": "스쿠버 다이빙 동아리",
+    "club_id": 334
+  },
+  {
+    "query": "스킨스쿠버 동아리",
+    "club_id": 334
+  },
+  {
+    "query": "스쿠버 모임",
+    "club_id": 334
+  },
+  {
+    "query": "스쿠버 배우는 곳",
+    "club_id": 334
+  },
+  {
+    "query": "한양대 스킨스쿠버 동아리",
+    "club_id": 334
+  },
+  {
+    "query": "스포츠 서포터즈",
+    "club_id": 335
+  },
+  {
+    "query": "농구 배구 축구",
+    "club_id": 335
+  },
+  {
+    "query": "HY-BALL 모집",
+    "club_id": 335
+  },
+  {
+    "query": "한양대 농구 동아리",
+    "club_id": 335
+  },
+  {
+    "query": "농구배구축구 서포터즈",
+    "club_id": 335
+  },
+  {
+    "query": "스포츠 동아리 신입",
+    "club_id": 335
+  },
+  {
+    "query": "스키부 HUST 모집",
+    "club_id": 336
+  },
+  {
+    "query": "한양대학교 스키부",
+    "club_id": 336
+  },
+  {
+    "query": "스키부 HUST 참가",
+    "club_id": 336
+  },
+  {
+    "query": "스키부 HUST 대회",
+    "club_id": 336
+  },
+  {
+    "query": "스키부 HUST 활동",
+    "club_id": 336
+  },
+  {
+    "query": "스키부 HUST 가입",
+    "club_id": 336
+  },
+  {
+    "query": "한양대학교 독서회",
+    "club_id": 337
+  },
+  {
+    "query": "한양 에르디아",
+    "club_id": 337
+  },
+  {
+    "query": "중앙동아리 대거리",
+    "club_id": 337
+  },
+  {
+    "query": "한양대 에르디아 모집",
+    "club_id": 337
+  },
+  {
+    "query": "한양 독서 모임",
+    "club_id": 337
+  },
+  {
+    "query": "한양 에르디아 신입",
+    "club_id": 337
+  },
+  {
+    "query": "토론 동아리",
+    "club_id": 338
+  },
+  {
+    "query": "중앙대 토론",
+    "club_id": 338
+  },
+  {
+    "query": "한양 토론동아리",
+    "club_id": 338
+  },
+  {
+    "query": "토론스터디",
+    "club_id": 338
+  },
+  {
+    "query": "토론 모임",
+    "club_id": 338
+  },
+  {
+    "query": "토론 모집",
+    "club_id": 338
+  },
+  {
+    "query": "한양대 사회공헌기술 동아리",
+    "club_id": 339
+  },
+  {
+    "query": "한양대 적정기술 스터디",
+    "club_id": 339
+  },
+  {
+    "query": "한양대 A;prime 모임",
+    "club_id": 339
+  },
+  {
+    "query": "한양대 어프라임 신입",
+    "club_id": 339
+  },
+  {
+    "query": "한양대 사회공헌기술 동아리 모집",
+    "club_id": 339
+  },
+  {
+    "query": "한양대 어프라임 신입 모집",
+    "club_id": 339
+  },
+  {
+    "query": "경영학술",
+    "club_id": 340
+  },
+  {
+    "query": "마케팅스터디",
+    "club_id": 340
+  },
+  {
+    "query": "중앙HAMA",
+    "club_id": 340
+  },
+  {
+    "query": "HAMA모임",
+    "club_id": 340
+  },
+  {
+    "query": "중앙학술동아리",
+    "club_id": 340
+  },
+  {
+    "query": "HAMA스터디",
+    "club_id": 340
+  },
+  {
+    "query": "천체관측",
+    "club_id": 341
+  },
+  {
+    "query": "별보는",
+    "club_id": 341
+  },
+  {
+    "query": "HASRA 모임",
+    "club_id": 341
+  },
+  {
+    "query": "천문학 세미나",
+    "club_id": 341
+  },
+  {
+    "query": "망원경",
+    "club_id": 341
+  },
+  {
+    "query": "별자리 찾기",
+    "club_id": 341
+  },
+  {
+    "query": "한양대 영어회화",
+    "club_id": 342
+  },
+  {
+    "query": "영어회화 모임",
+    "club_id": 342
+  },
+  {
+    "query": "국제적인 영어회화",
+    "club_id": 342
+  },
+  {
+    "query": "실생활 영어 배우기",
+    "club_id": 342
+  },
+  {
+    "query": "FORIF 모임",
+    "club_id": 343
+  },
+  {
+    "query": "FORIF 스터디",
+    "club_id": 343
+  },
+  {
+    "query": "프로그램 중앙동아리",
+    "club_id": 343
+  },
+  {
+    "query": "FORIF 자율부원",
+    "club_id": 343
+  },
+  {
+    "query": "FORIF 부원모집",
+    "club_id": 343
+  },
+  {
+    "query": "FORIF 학술모임",
+    "club_id": 343
+  },
+  {
+    "query": "컴퓨터 스터디",
+    "club_id": 344
+  },
+  {
+    "query": "한양대 컴퓨터",
+    "club_id": 344
+  },
+  {
+    "query": "프로그래밍 스터디",
+    "club_id": 344
+  },
+  {
+    "query": "AI 학습",
+    "club_id": 344
+  },
+  {
+    "query": "스피치 동아리",
+    "club_id": 345
+  },
+  {
+    "query": "스피치 모임",
+    "club_id": 345
+  },
+  {
+    "query": "한양대 스피치",
+    "club_id": 345
+  },
+  {
+    "query": "후세문화회",
+    "club_id": 345
+  },
+  {
+    "query": "중앙 스피치동아리",
+    "club_id": 345
+  },
+  {
+    "query": "스피치 배우기",
+    "club_id": 345
+  },
+  {
+    "query": "한양대 KUSA 모집",
+    "club_id": 346
+  },
+  {
+    "query": "한양대 학술동아리",
+    "club_id": 346
+  },
+  {
+    "query": "한양대 KUSA 부원",
+    "club_id": 346
+  },
+  {
+    "query": "한양대 KUSA 신입",
+    "club_id": 346
+  },
+  {
+    "query": "한양대 시사토론",
+    "club_id": 346
+  },
+  {
+    "query": "한양대 유네스코 KUSA",
+    "club_id": 346
+  },
+  {
+    "query": "영어토론 동아리",
+    "club_id": 347
+  },
+  {
+    "query": "SSC 모임",
+    "club_id": 347
+  },
+  {
+    "query": "영어회화 동아리",
+    "club_id": 347
+  },
+  {
+    "query": "영어토론 연합동아리",
+    "club_id": 347
+  },
+  {
+    "query": "국제교류 동아리",
+    "club_id": 347
+  },
+  {
+    "query": "토론 동아리",
+    "club_id": 347
+  },
+  {
+    "query": "한양대학교 영어토론",
+    "club_id": 348
+  },
+  {
+    "query": "TIME 동아리 모집",
+    "club_id": 348
+  },
+  {
+    "query": "한양플라자 영어스터디",
+    "club_id": 348
+  },
+  {
+    "query": "시사토론 동아리",
+    "club_id": 348
+  },
+  {
+    "query": "영어발표 모임",
+    "club_id": 348
+  },
+  {
+    "query": "한양대학교 외국인 친목",
+    "club_id": 348
+  },
+  {
+    "query": "DSM 모임",
+    "club_id": 349
+  },
+  {
+    "query": "DSM 가입",
+    "club_id": 349
+  },
+  {
+    "query": "DSM 예배",
+    "club_id": 349
+  },
+  {
+    "query": "DSM 선교",
+    "club_id": 349
+  },
+  {
+    "query": "DSM 연합동아리",
+    "club_id": 349
+  },
+  {
+    "query": "게임개발 동아리",
+    "club_id": 350
+  },
+  {
+    "query": "OOPArts 모집",
+    "club_id": 350
+  },
+  {
+    "query": "한양대학교 게임동아리",
+    "club_id": 350
+  },
+  {
+    "query": "게임 개발 스터디",
+    "club_id": 350
+  },
+  {
+    "query": "게임 개발 모임",
+    "club_id": 350
+  },
+  {
+    "query": "OOPArts 부원 모집",
+    "club_id": 350
+  },
+  {
+    "query": "동굴 탐사",
+    "club_id": 216
+  },
+  {
+    "query": "자연동굴",
+    "club_id": 216
+  },
+  {
+    "query": "미개방 동굴",
+    "club_id": 216
+  },
+  {
+    "query": "등산 동아리",
+    "club_id": 216
+  },
+  {
+    "query": "캠핑 동아리",
+    "club_id": 216
+  },
+  {
+    "query": "중央동아리",
+    "club_id": 216
+  },
+  {
+    "query": "IT 창업 모임",
+    "club_id": 217
+  },
+  {
+    "query": "멋쟁이사자처럼 스터디",
+    "club_id": 217
+  },
+  {
+    "query": "IT 서비스 배우는 곳",
+    "club_id": 217
+  },
+  {
+    "query": "창업 동아리 모집",
+    "club_id": 217
+  },
+  {
+    "query": "IT 프로젝트 모임",
+    "club_id": 217
+  },
+  {
+    "query": "천체 관측 동아리",
+    "club_id": 218
+  },
+  {
+    "query": "우주 탐구 모임",
+    "club_id": 218
+  },
+  {
+    "query": "천문학 배우는 동아리",
+    "club_id": 218
+  },
+  {
+    "query": "별 관측 동아리",
+    "club_id": 218
+  },
+  {
+    "query": "천문학 스터디",
+    "club_id": 218
+  },
+  {
+    "query": "우주 탐구회",
+    "club_id": 218
+  },
+  {
+    "query": "캠퍼스 에너지 세이버 모집",
+    "club_id": 219
+  },
+  {
+    "query": "건국대 환경 동아리",
+    "club_id": 219
+  },
+  {
+    "query": "친환경 봉사 모집",
+    "club_id": 219
+  },
+  {
+    "query": "제로웨이스트 캠페인",
+    "club_id": 219
+  },
+  {
+    "query": "CES 환경 동아리",
+    "club_id": 219
+  },
+  {
+    "query": "친환경 활동 모집",
+    "club_id": 219
+  },
+  {
+    "query": "AM无线电",
+    "club_id": 220
+  },
+  {
+    "query": "HAM俱乐部",
+    "club_id": 220
+  },
+  {
+    "query": "无绳通信社团",
+    "club_id": 220
+  },
+  {
+    "query": "无线电通信",
+    "club_id": 220
+  },
+  {
+    "query": "DIY无线电",
+    "club_id": 220
+  },
+  {
+    "query": "HAM社团",
+    "club_id": 220
+  },
+  {
+    "query": "발명 동아리",
+    "club_id": 221
+  },
+  {
+    "query": "IMOK 모집",
+    "club_id": 221
+  },
+  {
+    "query": "발명 모임",
+    "club_id": 221
+  },
+  {
+    "query": "IMOK 스터디",
+    "club_id": 221
+  },
+  {
+    "query": "발명 공모전",
+    "club_id": 221
+  },
+  {
+    "query": "게임 개발 모임",
+    "club_id": 222
+  },
+  {
+    "query": "게임 제작 스터디",
+    "club_id": 222
+  },
+  {
+    "query": "게임 개발 경진대회",
+    "club_id": 222
+  },
+  {
+    "query": "게임 기획 모임",
+    "club_id": 222
+  },
+  {
+    "query": "게임 스터디",
+    "club_id": 222
+  },
+  {
+    "query": "생동감 동아리",
+    "club_id": 223
+  },
+  {
+    "query": "생동감 모임",
+    "club_id": 223
+  },
+  {
+    "query": "생물 탐방 동아리",
+    "club_id": 223
+  },
+  {
+    "query": "생동감 신입",
+    "club_id": 223
+  },
+  {
+    "query": "생동감 스터디",
+    "club_id": 223
+  },
+  {
+    "query": "생동감 활동",
+    "club_id": 223
+  },
+  {
+    "query": "IT 스터디",
+    "club_id": 224
+  },
+  {
+    "query": "개발 모임",
+    "club_id": 224
+  },
+  {
+    "query": "디자인 커뮤니티",
+    "club_id": 224
+  },
+  {
+    "query": "네트워킹 모임",
+    "club_id": 224
+  },
+  {
+    "query": "프로젝트 모집",
+    "club_id": 224
+  },
+  {
+    "query": "스터디 모집",
+    "club_id": 224
+  },
+  {
+    "query": "금융 스터디",
+    "club_id": 225
+  },
+  {
+    "query": "금융 동아리",
+    "club_id": 225
+  },
+  {
+    "query": "금리 연구회",
+    "club_id": 225
+  },
+  {
+    "query": "금융 투자 모임",
+    "club_id": 225
+  },
+  {
+    "query": "금융 선배들과",
+    "club_id": 225
+  },
+  {
+    "query": "금리 연합 활동",
+    "club_id": 225
+  },
+  {
+    "query": "건국대학교 법학회",
+    "club_id": 226
+  },
+  {
+    "query": "건국법학회 스터디",
+    "club_id": 226
+  },
+  {
+    "query": "건국법학회 모임",
+    "club_id": 226
+  },
+  {
+    "query": "건국대학교 로스쿨",
+    "club_id": 226
+  },
+  {
+    "query": "법학회 총회",
+    "club_id": 226
+  },
+  {
+    "query": "건국법학회 입회",
+    "club_id": 226
+  },
+  {
+    "query": "건대 교지 편집",
+    "club_id": 227
+  },
+  {
+    "query": "교지 관련 모임",
+    "club_id": 227
+  },
+  {
+    "query": "건대 교지 스터디",
+    "club_id": 227
+  },
+  {
+    "query": "건대 교지 수습",
+    "club_id": 227
+  },
+  {
+    "query": "교지 발행",
+    "club_id": 227
+  },
+  {
+    "query": "건대 교지委员会",
+    "club_id": 227
+  },
+  {
+    "query": "강연하는 동아리",
+    "club_id": 228
+  },
+  {
+    "query": "레뮤제 모임",
+    "club_id": 228
+  },
+  {
+    "query": "건국대학교 강연",
+    "club_id": 228
+  },
+  {
+    "query": "레뮤제 스터디",
+    "club_id": 228
+  },
+  {
+    "query": "강연 기획 동아리",
+    "club_id": 228
+  },
+  {
+    "query": "레뮤제 회원모집",
+    "club_id": 228
+  },
+  {
+    "query": "국제 친목 동아리",
+    "club_id": 229
+  },
+  {
+    "query": "국제 친목 모임",
+    "club_id": 229
+  },
+  {
+    "query": "글로벌 친목 스터디",
+    "club_id": 229
+  },
+  {
+    "query": "국제 친목 배우는 곳",
+    "club_id": 229
+  },
+  {
+    "query": "국제 친목 중앙동아리",
+    "club_id": 229
+  },
+  {
+    "query": "영어토론 모임",
+    "club_id": 230
+  },
+  {
+    "query": "시사학술 모임",
+    "club_id": 230
+  },
+  {
+    "query": "시간 동아리",
+    "club_id": 230
+  },
+  {
+    "query": "영어스터디 모임",
+    "club_id": 230
+  },
+  {
+    "query": "칼럼토론 모임",
+    "club_id": 230
+  },
+  {
+    "query": "중央英语交流",
+    "club_id": 230
+  },
+  {
+    "query": "건국호우회 봉사",
+    "club_id": 231
+  },
+  {
+    "query": "건국호우회 모집",
+    "club_id": 231
+  },
+  {
+    "query": "호국보훈 봉사",
+    "club_id": 231
+  },
+  {
+    "query": "건국호우회 부원",
+    "club_id": 231
+  },
+  {
+    "query": "건국대학교 호국보훈",
+    "club_id": 231
+  },
+  {
+    "query": "건국호우회 봉사 모임",
+    "club_id": 231
+  },
+  {
+    "query": "길고양이 돌봄 동아리",
+    "club_id": 232
+  },
+  {
+    "query": "中央동아리 봉사",
+    "club_id": 232
+  },
+  {
+    "query": "konkuk 건냥이",
+    "club_id": 232
+  },
+  {
+    "query": "길고양이 돌보는 곳",
+    "club_id": 232
+  },
+  {
+    "query": "TNR 동아리",
+    "club_id": 232
+  },
+  {
+    "query": "양치기 동아리",
+    "club_id": 232
+  },
+  {
+    "query": "건축 봉사",
+    "club_id": 233
+  },
+  {
+    "query": "해비타트 봉사",
+    "club_id": 233
+  },
+  {
+    "query": "중앙동아리 봉사",
+    "club_id": 233
+  },
+  {
+    "query": "건축봉사 모집",
+    "club_id": 233
+  },
+  {
+    "query": "다솜모아 봉사",
+    "club_id": 233
+  },
+  {
+    "query": "해비타트 봉사 모집",
+    "club_id": 233
+  },
+  {
+    "query": "중앙 봉사동아리",
+    "club_id": 234
+  },
+  {
+    "query": "로타랙트 봉사",
+    "club_id": 234
+  },
+  {
+    "query": "건국대 봉사 모집",
+    "club_id": 234
+  },
+  {
+    "query": "로타랙트 부원모집",
+    "club_id": 234
+  },
+  {
+    "query": "중앙 봉사 동아리",
+    "club_id": 235
+  },
+  {
+    "query": "봉사 모임",
+    "club_id": 235
+  },
+  {
+    "query": ";!죽순회 봉사",
+    "club_id": 235
+  },
+  {
+    "query": ";!중앙 봉사회",
+    "club_id": 235
+  },
+  {
+    "query": "건국대 유기동물 봉사",
+    "club_id": 236
+  },
+  {
+    "query": "쿠니멀 동아리 모집",
+    "club_id": 236
+  },
+  {
+    "query": "유기동물 봉사 모임",
+    "club_id": 236
+  },
+  {
+    "query": "중앙 봉사동아리",
+    "club_id": 236
+  },
+  {
+    "query": "KONKUK KUNIMAL",
+    "club_id": 236
+  },
+  {
+    "query": "동물 봉사스터디",
+    "club_id": 236
+  },
+  {
+    "query": "장애인권 동아리",
+    "club_id": 237
+  },
+  {
+    "query": "가날지기 모집",
+    "club_id": 237
+  },
+  {
+    "query": "장애인권 모임",
+    "club_id": 237
+  },
+  {
+    "query": "배리어프리 나들이",
+    "club_id": 237
+  },
+  {
+    "query": "장애인권 모임장",
+    "club_id": 237
+  },
+  {
+    "query": "가날지기 친목",
+    "club_id": 237
+  },
+  {
+    "query": "인액터스 건국 동아리",
+    "club_id": 238
+  },
+  {
+    "query": "인액터스 창업 동아리",
+    "club_id": 238
+  },
+  {
+    "query": "실전 창업 동아리",
+    "club_id": 238
+  },
+  {
+    "query": "인액터스 사회공헌",
+    "club_id": 238
+  },
+  {
+    "query": "건국 인액터스 모집",
+    "club_id": 238
+  },
+  {
+    "query": "인액터스 비즈니스 모델",
+    "club_id": 238
+  },
+  {
+    "query": "인권 동아리",
+    "club_id": 239
+  },
+  {
+    "query": "건국대 인권",
+    "club_id": 239
+  },
+  {
+    "query": "중앙동아리 인권",
+    "club_id": 239
+  },
+  {
+    "query": "인권 활동 모집",
+    "club_id": 239
+  },
+  {
+    "query": "건국대 인권 모임",
+    "club_id": 239
+  },
+  {
+    "query": "인권 세미나",
+    "club_id": 239
+  },
+  {
+    "query": "UNSA 모집",
+    "club_id": 240
+  },
+  {
+    "query": "UNSA 봉사",
+    "club_id": 240
+  },
+  {
+    "query": "UNSA 사회",
+    "club_id": 240
+  },
+  {
+    "query": "중앙동아리 UNSA",
+    "club_id": 240
+  },
+  {
+    "query": "UNSA 신입",
+    "club_id": 240
+  },
+  {
+    "query": "UNSA 활동",
+    "club_id": 240
+  },
+  {
+    "query": "건국대 기독교 동아리",
+    "club_id": 241
+  },
+  {
+    "query": "CCC 모임",
+    "club_id": 241
+  },
+  {
+    "query": "DSM 동아리",
+    "club_id": 241
+  },
+  {
+    "query": "기독학생연합",
+    "club_id": 241
+  },
+  {
+    "query": "중앙 연합 동아리",
+    "club_id": 241
+  },
+  {
+    "query": "건국대 기독스터디",
+    "club_id": 241
+  },
+  {
+    "query": "불교 동아리",
+    "club_id": 242
+  },
+  {
+    "query": "건국대학교 불교",
+    "club_id": 242
+  },
+  {
+    "query": "인연 불교",
+    "club_id": 242
+  },
+  {
+    "query": "건대 불교학생회",
+    "club_id": 242
+  },
+  {
+    "query": "불교 모임",
+    "club_id": 242
+  },
+  {
+    "query": "불교스터디",
+    "club_id": 242
+  },
+  {
+    "query": "가톨릭 동아리",
+    "club_id": 243
+  },
+  {
+    "query": "서가대연",
+    "club_id": 243
+  },
+  {
+    "query": "신앙모임",
+    "club_id": 243
+  },
+  {
+    "query": "큐바디스도미네",
+    "club_id": 243
+  },
+  {
+    "query": "건국대 가톨릭",
+    "club_id": 243
+  },
+  {
+    "query": "신부님 모임",
+    "club_id": 243
+  },
+  {
+    "query": "불교 동아리",
+    "club_id": 244
+  },
+  {
+    "query": "보람 동아리",
+    "club_id": 244
+  },
+  {
+    "query": "중앙동아리 불교",
+    "club_id": 244
+  },
+  {
+    "query": "불교 모임",
+    "club_id": 244
+  },
+  {
+    "query": "불교 스터디",
+    "club_id": 244
+  },
+  {
+    "query": "보람 신입",
+    "club_id": 244
+  },
+  {
+    "query": "미식축구 동아리",
+    "club_id": 245
+  },
+  {
+    "query": "레이징불스",
+    "club_id": 245
+  },
+  {
+    "query": "건국대 미식축구",
+    "club_id": 245
+  },
+  {
+    "query": "미식축구 모임",
+    "club_id": 245
+  },
+  {
+    "query": "CENTRAL_CLUB 미식축구",
+    "club_id": 245
+  },
+  {
+    "query": "2025 미식축구",
+    "club_id": 245
+  },
+  {
+    "query": "야구 동아리",
+    "club_id": 246
+  },
+  {
+    "query": "불소야구부 모집",
+    "club_id": 246
+  },
+  {
+    "query": "건국대 야구",
+    "club_id": 246
+  },
+  {
+    "query": "중앙동아리 야구",
+    "club_id": 246
+  },
+  {
+    "query": "야구부 모집",
+    "club_id": 246
+  },
+  {
+    "query": "불소야구부 신입",
+    "club_id": 246
+  },
+  {
+    "query": "농구 동아리",
+    "club_id": 247
+  },
+  {
+    "query": "KUAB 모집",
+    "club_id": 247
+  },
+  {
+    "query": "건국대 농구",
+    "club_id": 247
+  },
+  {
+    "query": "앙농구부",
+    "club_id": 247
+  },
+  {
+    "query": "농구스터디",
+    "club_id": 247
+  },
+  {
+    "query": "중앙동아리 농구",
+    "club_id": 247
+  },
+  {
+    "query": "배드민턴 동아리",
+    "club_id": 248
+  },
+  {
+    "query": "플루마 동아리",
+    "club_id": 248
+  },
+  {
+    "query": "건국대 배드민턴",
+    "club_id": 248
+  },
+  {
+    "query": "배드민턴 모임",
+    "club_id": 248
+  },
+  {
+    "query": "PLUMA 신규",
+    "club_id": 248
+  },
+  {
+    "query": "배드민턴 스토리",
+    "club_id": 248
+  },
+  {
+    "query": "축구 동아리",
+    "club_id": 249
+  },
+  {
+    "query": "중앙 축구",
+    "club_id": 249
+  },
+  {
+    "query": "konkuk 축구",
+    "club_id": 249
+  },
+  {
+    "query": "konkuk fc",
+    "club_id": 249
+  },
+  {
+    "query": "konkuk 축구동아리",
+    "club_id": 249
+  },
+  {
+    "query": "테니스 동아리",
+    "club_id": 250
+  },
+  {
+    "query": "KTC 모집",
+    "club_id": 250
+  },
+  {
+    "query": "KONKUK 테니스",
+    "club_id": 250
+  },
+  {
+    "query": "테니스 배우는 곳",
+    "club_id": 250
+  },
+  {
+    "query": "KTC 테니스",
+    "club_id": 250
+  },
+  {
+    "query": "테니스 스토리",
+    "club_id": 250
+  },
+  {
+    "query": "탁구 동아리",
+    "club_id": 251
+  },
+  {
+    "query": "TAK'KU 동아리",
+    "club_id": 251
+  },
+  {
+    "query": "탁구 모임",
+    "club_id": 251
+  },
+  {
+    "query": "TAK'KU 신입",
+    "club_id": 251
+  },
+  {
+    "query": "建设和体育",
+    "club_id": 251
+  },
+  {
+    "query": "建大卓球",
+    "club_id": 251
+  },
+  {
+    "query": "건국대학교 검도",
+    "club_id": 252
+  },
+  {
+    "query": "건국검사회 모집",
+    "club_id": 252
+  },
+  {
+    "query": "건국검사회 운동",
+    "club_id": 252
+  },
+  {
+    "query": "건국검사회 동아리",
+    "club_id": 252
+  },
+  {
+    "query": "건국검사회 친목",
+    "club_id": 252
+  },
+  {
+    "query": "검도 동아리",
+    "club_id": 252
+  },
+  {
+    "query": "태권도 동아리",
+    "club_id": 253
+  },
+  {
+    "query": "태연 태권도",
+    "club_id": 253
+  },
+  {
+    "query": "건국대 태권도",
+    "club_id": 253
+  },
+  {
+    "query": "중앙동아리 태권도",
+    "club_id": 253
+  },
+  {
+    "query": "태권도 모임",
+    "club_id": 253
+  },
+  {
+    "query": "태연 태권도부",
+    "club_id": 253
+  },
+  {
+    "query": "자전거 동아리",
+    "club_id": 254
+  },
+  {
+    "query": "BiKU 모임",
+    "club_id": 254
+  },
+  {
+    "query": "건국대 자전거",
+    "club_id": 254
+  },
+  {
+    "query": "자전거 라이딩 동아리",
+    "club_id": 254
+  },
+  {
+    "query": "자전거 스토브리그",
+    "club_id": 254
+  },
+  {
+    "query": "BiKU 신입",
+    "club_id": 254
+  },
+  {
+    "query": "유스호스텔 모집",
+    "club_id": 255
+  },
+  {
+    "query": "여행 동아리 건국대",
+    "club_id": 255
+  },
+  {
+    "query": "건국대 여행 모임",
+    "club_id": 255
+  },
+  {
+    "query": "건국대 유스호스텔 모임",
+    "club_id": 255
+  },
+  {
+    "query": "건국대 여행동아리",
+    "club_id": 255
+  },
+  {
+    "query": "눈꽃 스노우보드",
+    "club_id": 256
+  },
+  {
+    "query": "눈꽃 동아리 모집",
+    "club_id": 256
+  },
+  {
+    "query": "눈꽃 시즌 활동",
+    "club_id": 256
+  },
+  {
+    "query": "눈꽃 동호회",
+    "club_id": 256
+  },
+  {
+    "query": "눈꽃 겨울방학",
+    "club_id": 256
+  },
+  {
+    "query": "건국대 중앙 유도 동아리",
+    "club_id": 257
+  },
+  {
+    "query": "청백 동아리",
+    "club_id": 257
+  },
+  {
+    "query": "건대 유도 동아리",
+    "club_id": 257
+  },
+  {
+    "query": "건국대 유도 모집",
+    "club_id": 257
+  },
+  {
+    "query": "청백 신입 모집",
+    "club_id": 257
+  },
+  {
+    "query": "건대 중앙 유도",
+    "club_id": 257
+  },
+  {
+    "query": "스키 동아리",
+    "club_id": 258
+  },
+  {
+    "query": "스키하는 곳",
+    "club_id": 258
+  },
+  {
+    "query": "스키 모임",
+    "club_id": 258
+  },
+  {
+    "query": "스키 배우는",
+    "club_id": 258
+  },
+  {
+    "query": "건국대 스키부",
+    "club_id": 258
+  },
+  {
+    "query": "KKUSKI",
+    "club_id": 258
+  },
+  {
+    "query": "건국대학교 스쿠버다이빙",
+    "club_id": 259
+  },
+  {
+    "query": "수중탐사부 모집",
+    "club_id": 259
+  },
+  {
+    "query": "수중탐사부 원정",
+    "club_id": 259
+  },
+  {
+    "query": "건대 다이빙 동아리",
+    "club_id": 259
+  },
+  {
+    "query": "울릉도 다이빙",
+    "club_id": 259
+  },
+  {
+    "query": "해외 스쿠버다이빙",
+    "club_id": 259
+  },
+  {
+    "query": "산악부 모집",
+    "club_id": 260
+  },
+  {
+    "query": "암벽 등반 모임",
+    "club_id": 260
+  },
+  {
+    "query": "산악부 신입",
+    "club_id": 260
+  },
+  {
+    "query": "건대 산악 활동",
+    "club_id": 260
+  },
+  {
+    "query": "등산 동아리",
+    "club_id": 260
+  },
+  {
+    "query": "게임동아리",
+    "club_id": 261
+  },
+  {
+    "query": "KU:GG 모집",
+    "club_id": 261
+  },
+  {
+    "query": "중앙 게임동아리",
+    "club_id": 261
+  },
+  {
+    "query": "게임클럽",
+    "club_id": 261
+  },
+  {
+    "query": "종합게임동아리",
+    "club_id": 261
+  },
+  {
+    "query": "게임스터디",
+    "club_id": 261
+  },
+  {
+    "query": "건국대 러닝크루",
+    "club_id": 262
+  },
+  {
+    "query": "RIKU 달리기",
+    "club_id": 262
+  },
+  {
+    "query": "건대 러닝 모임",
+    "club_id": 262
+  },
+  {
+    "query": "건대 러닝 스터디",
+    "club_id": 262
+  },
+  {
+    "query": "건대 러닝 크루",
+    "club_id": 262
+  },
+  {
+    "query": "건대 러닝 모집",
+    "club_id": 262
+  },
+  {
+    "query": "서브컬처 모임",
+    "club_id": 263
+  },
+  {
+    "query": "만화 스터디",
+    "club_id": 263
+  },
+  {
+    "query": "애니메이션 모임",
+    "club_id": 263
+  },
+  {
+    "query": "망치 동아리",
+    "club_id": 263
+  },
+  {
+    "query": "건국대학교 만화",
+    "club_id": 263
+  },
+  {
+    "query": "버튜버 모임",
+    "club_id": 263
+  },
+  {
+    "query": "건국대학교 공간미 동아리",
+    "club_id": 264
+  },
+  {
+    "query": "공간미 스터디",
+    "club_id": 264
+  },
+  {
+    "query": "순수미술 동아리",
+    "club_id": 264
+  },
+  {
+    "query": "공간미 학우 모임",
+    "club_id": 264
+  },
+  {
+    "query": "공간미 그림 배우는",
+    "club_id": 264
+  },
+  {
+    "query": "공간미 동아리방",
+    "club_id": 264
+  },
+  {
+    "query": "차를 배우는 동아리",
+    "club_id": 265
+  },
+  {
+    "query": "다도 모임",
+    "club_id": 265
+  },
+  {
+    "query": "차 마시는 동아리",
+    "club_id": 265
+  },
+  {
+    "query": "다정회 모집",
+    "club_id": 265
+  },
+  {
+    "query": "다기 모임",
+    "club_id": 265
+  },
+  {
+    "query": "차 탐방 동아리",
+    "club_id": 265
+  },
+  {
+    "query": "목공예 동아리",
+    "club_id": 266
+  },
+  {
+    "query": "목방 동아리",
+    "club_id": 266
+  },
+  {
+    "query": "목공예 모임",
+    "club_id": 266
+  },
+  {
+    "query": "목공예 배우는",
+    "club_id": 266
+  },
+  {
+    "query": "목공예 스터디",
+    "club_id": 266
+  },
+  {
+    "query": "목공예 창작",
+    "club_id": 266
+  },
+  {
+    "query": "문학 동아리",
+    "club_id": 267
+  },
+  {
+    "query": "시 창작 모임",
+    "club_id": 267
+  },
+  {
+    "query": "문학 공유",
+    "club_id": 267
+  },
+  {
+    "query": "중앙동아리 문단",
+    "club_id": 267
+  },
+  {
+    "query": "문학스터디",
+    "club_id": 267
+  },
+  {
+    "query": "문학 모임",
+    "club_id": 267
+  },
+  {
+    "query": "서예 동아리",
+    "club_id": 268
+  },
+  {
+    "query": "건국서도회 모집",
+    "club_id": 268
+  },
+  {
+    "query": "건국대학교 서예",
+    "club_id": 268
+  },
+  {
+    "query": "서예 배우는 동아리",
+    "club_id": 268
+  },
+  {
+    "query": "한글 한문 서예",
+    "club_id": 268
+  },
+  {
+    "query": "중앙동아리 서예",
+    "club_id": 268
+  },
+  {
+    "query": "사진 동호회",
+    "club_id": 269
+  },
+  {
+    "query": "사진 모임",
+    "club_id": 269
+  },
+  {
+    "query": "사진 스터디",
+    "club_id": 269
+  },
+  {
+    "query": "사진 배우는 동아리",
+    "club_id": 269
+  },
+  {
+    "query": "진상회 신입",
+    "club_id": 269
+  },
+  {
+    "query": "예술 모임",
+    "club_id": 270
+  },
+  {
+    "query": "전시회 가는 곳",
+    "club_id": 270
+  },
+  {
+    "query": "영화 보는 동아리",
+    "club_id": 270
+  },
+  {
+    "query": "문화 활동 동아리",
+    "club_id": 270
+  },
+  {
+    "query": "야구 보는 동아리",
+    "club_id": 270
+  },
+  {
+    "query": "스터디 모임",
+    "club_id": 270
+  },
+  {
+    "query": "건대 락밴드",
+    "club_id": 271
+  },
+  {
+    "query": "AQUI 모집",
+    "club_id": 271
+  },
+  {
+    "query": "중앙동아리 락밴드",
+    "club_id": 271
+  },
+  {
+    "query": "건대 중앙락밴드",
+    "club_id": 271
+  },
+  {
+    "query": "AQUI 드럼 모집",
+    "club_id": 271
+  },
+  {
+    "query": "건국대학교 락밴드",
+    "club_id": 271
+  },
+  {
+    "query": "쿠필 연주",
+    "club_id": 272
+  },
+  {
+    "query": "쿠필 모임",
+    "club_id": 272
+  },
+  {
+    "query": "쿠필 입단",
+    "club_id": 272
+  },
+  {
+    "query": "쿠필 음악",
+    "club_id": 272
+  },
+  {
+    "query": "쿠필 총회",
+    "club_id": 272
+  },
+  {
+    "query": "쿠필 신입",
+    "club_id": 272
+  },
+  {
+    "query": "클래식 기타 동아리",
+    "club_id": 273
+  },
+  {
+    "query": "건국대학교 기타 모임",
+    "club_id": 273
+  },
+  {
+    "query": "클래식 기타 배우는 곳",
+    "club_id": 273
+  },
+  {
+    "query": "MUSE 기타 스터디",
+    "club_id": 273
+  },
+  {
+    "query": "클래식 기타 친목 활동",
+    "club_id": 273
+  },
+  {
+    "query": "건국합창단 모집",
+    "club_id": 274
+  },
+  {
+    "query": "건국대 합창단",
+    "club_id": 274
+  },
+  {
+    "query": "건국 합창 모임",
+    "club_id": 274
+  },
+  {
+    "query": "건국 중앙동아리",
+    "club_id": 274
+  },
+  {
+    "query": "건국 합창단 신입",
+    "club_id": 274
+  },
+  {
+    "query": "건국 합창 반주자",
+    "club_id": 274
+  },
+  {
+    "query": "피아노 중앙동아리",
+    "club_id": 275
+  },
+  {
+    "query": "중앙동아리 선율",
+    "club_id": 275
+  },
+  {
+    "query": "피아노 연습 중앙동아리",
+    "club_id": 275
+  },
+  {
+    "query": "선율 동아리 모임",
+    "club_id": 275
+  },
+  {
+    "query": "피아노 스터디 중앙동아리",
+    "club_id": 275
+  },
+  {
+    "query": "피아노 친목 동아리",
+    "club_id": 275
+  },
+  {
+    "query": "건국대학교 밴드 동아리",
+    "club_id": 276
+  },
+  {
+    "query": "소리터 동아리",
+    "club_id": 276
+  },
+  {
+    "query": "중앙 밴드 모집",
+    "club_id": 276
+  },
+  {
+    "query": "밴드 연습실",
+    "club_id": 276
+  },
+  {
+    "query": "소리터 신입모집",
+    "club_id": 276
+  },
+  {
+    "query": "건대 중앙밴드",
+    "club_id": 276
+  },
+  {
+    "query": "음악 모임",
+    "club_id": 277
+  },
+  {
+    "query": "밴드 활동",
+    "club_id": 277
+  },
+  {
+    "query": "건국대 중앙밴드",
+    "club_id": 277
+  },
+  {
+    "query": "보컬 모집",
+    "club_id": 277
+  },
+  {
+    "query": "대중음악 스터디",
+    "club_id": 277
+  },
+  {
+    "query": "음악 공연",
+    "club_id": 277
+  },
+  {
+    "query": "건대극장 모집",
+    "club_id": 278
+  },
+  {
+    "query": "건대 연극 동아리",
+    "club_id": 278
+  },
+  {
+    "query": "건대 중앙극장",
+    "club_id": 278
+  },
+  {
+    "query": "건대 중앙연극동아리",
+    "club_id": 278
+  },
+  {
+    "query": "건대극장 신입",
+    "club_id": 278
+  },
+  {
+    "query": "건대 중앙 연극",
+    "club_id": 278
+  },
+  {
+    "query": "힙합 동아리",
+    "club_id": 279
+  },
+  {
+    "query": "중앙힙합동아리",
+    "club_id": 279
+  },
+  {
+    "query": "워너패밀리 모집",
+    "club_id": 279
+  },
+  {
+    "query": "건국대 힙합",
+    "club_id": 279
+  },
+  {
+    "query": "스트릿댄스 팀",
+    "club_id": 279
+  },
+  {
+    "query": "힙합스터디",
+    "club_id": 279
+  },
+  {
+    "query": "세종 로타랙트 봉사",
+    "club_id": 1
+  },
+  {
+    "query": "연합 봉사",
+    "club_id": 1
+  },
+  {
+    "query": "로타랙트 모임",
+    "club_id": 1
+  },
+  {
+    "query": "세종 봉사 동아리",
+    "club_id": 1
+  },
+  {
+    "query": "봉사와 나눔",
+    "club_id": 1
+  },
+  {
+    "query": "영어교육 봉사",
+    "club_id": 2
+  },
+  {
+    "query": "1달에 한번 모임",
+    "club_id": 2
+  },
+  {
+    "query": "세종대학교 봉사",
+    "club_id": 2
+  },
+  {
+    "query": "성동청소년센터 봉사",
+    "club_id": 2
+  },
+  {
+    "query": "셀스쿨",
+    "club_id": 2
+  },
+  {
+    "query": "영어 교육 봉사 동아리",
+    "club_id": 2
+  },
+  {
+    "query": "중앙 봉사 동아리",
+    "club_id": 3
+  },
+  {
+    "query": "세종 봉사 동아리",
+    "club_id": 3
+  },
+  {
+    "query": "죽순회 봉사",
+    "club_id": 3
+  },
+  {
+    "query": "플로깅 봉사 모임",
+    "club_id": 3
+  },
+  {
+    "query": "연탄 봉사 모집",
+    "club_id": 3
+  },
+  {
+    "query": "봉사 동아리 가입",
+    "club_id": 3
+  },
+  {
+    "query": "밴드 동아리",
+    "club_id": 4
+  },
+  {
+    "query": "세종대 밴드",
+    "club_id": 4
+  },
+  {
+    "query": "늘혬코러스 모집",
+    "club_id": 4
+  },
+  {
+    "query": "밴드 모임",
+    "club_id": 4
+  },
+  {
+    "query": "공연하는 밴드",
+    "club_id": 4
+  },
+  {
+    "query": "세션스터디",
+    "club_id": 4
+  },
+  {
+    "query": "보컬 동아리 모집",
+    "club_id": 5
+  },
+  {
+    "query": "더블랙 동아리",
+    "club_id": 5
+  },
+  {
+    "query": "중央保歌社",
+    "club_id": 5
+  },
+  {
+    "query": "보컬스터디",
+    "club_id": 5
+  },
+  {
+    "query": "팝송 부르는 동아리",
+    "club_id": 5
+  },
+  {
+    "query": "버스킹 동아리",
+    "club_id": 5
+  },
+  {
+    "query": "세종대 중앙밴드",
+    "club_id": 6
+  },
+  {
+    "query": "사운드플러스 모임",
+    "club_id": 6
+  },
+  {
+    "query": "밴드 동아리 모집",
+    "club_id": 6
+  },
+  {
+    "query": "중앙밴드 활동",
+    "club_id": 6
+  },
+  {
+    "query": "세종대 밴드 모임",
+    "club_id": 6
+  },
+  {
+    "query": "SOUND PLUS",
+    "club_id": 6
+  },
+  {
+    "query": "중앙 흑인 음악 동아리",
+    "club_id": 7
+  },
+  {
+    "query": "SOULTRAIN 모집",
+    "club_id": 7
+  },
+  {
+    "query": "힙합 동아리 세종",
+    "club_id": 7
+  },
+  {
+    "query": "대학 힙합 동아리",
+    "club_id": 7
+  },
+  {
+    "query": "흑인 음악 동아리",
+    "club_id": 7
+  },
+  {
+    "query": "SOULTRAIN 활동",
+    "club_id": 7
+  },
+  {
+    "query": "연극 동아리",
+    "club_id": 8
+  },
+  {
+    "query": "세종극회 모집",
+    "club_id": 8
+  },
+  {
+    "query": "중앙 연극회",
+    "club_id": 8
+  },
+  {
+    "query": "연극 모임",
+    "club_id": 8
+  },
+  {
+    "query": "연극 배우는",
+    "club_id": 8
+  },
+  {
+    "query": "연극 스터디",
+    "club_id": 8
+  },
+  {
+    "query": "세종 힙합 동아리",
+    "club_id": 9
+  },
+  {
+    "query": "중앙 힙합 동아리",
+    "club_id": 9
+  },
+  {
+    "query": "INTRO 동아리 모집",
+    "club_id": 9
+  },
+  {
+    "query": "세종 INTRO 동아리",
+    "club_id": 9
+  },
+  {
+    "query": "중앙 힙합 동아리 모집",
+    "club_id": 9
+  },
+  {
+    "query": "세종 힙합 모임",
+    "club_id": 9
+  },
+  {
+    "query": "세종대 터벌림 동아리",
+    "club_id": 10
+  },
+  {
+    "query": "터벌림 풍물 동아리",
+    "club_id": 10
+  },
+  {
+    "query": "터벌림 모집",
+    "club_id": 10
+  },
+  {
+    "query": "세종대 터벌림 연습",
+    "club_id": 10
+  },
+  {
+    "query": "터벌림 패명",
+    "club_id": 10
+  },
+  {
+    "query": "세종대 락 밴드",
+    "club_id": 11
+  },
+  {
+    "query": "PAGE7 모집",
+    "club_id": 11
+  },
+  {
+    "query": "세종대 락 동아리",
+    "club_id": 11
+  },
+  {
+    "query": "중앙 클럽 락 밴드",
+    "club_id": 11
+  },
+  {
+    "query": "초보자 락 밴드",
+    "club_id": 11
+  },
+  {
+    "query": "세종대 락스터디",
+    "club_id": 11
+  },
+  {
+    "query": "클래식기타",
+    "club_id": 12
+  },
+  {
+    "query": "버스킹 모임",
+    "club_id": 12
+  },
+  {
+    "query": "정기연주회",
+    "club_id": 12
+  },
+  {
+    "query": "사부제",
+    "club_id": 12
+  },
+  {
+    "query": "세종대 댄스동아리",
+    "club_id": 13
+  },
+  {
+    "query": "나인식스 댄스",
+    "club_id": 13
+  },
+  {
+    "query": "NinesiX 모집",
+    "club_id": 13
+  },
+  {
+    "query": "연합 댄스 동아리",
+    "club_id": 13
+  },
+  {
+    "query": "네시ックス 부원",
+    "club_id": 13
+  },
+  {
+    "query": "세종대 댄스스터디",
+    "club_id": 13
+  },
+  {
+    "query": "오케스트라 모임",
+    "club_id": 14
+  },
+  {
+    "query": "지음ZIUM 신입",
+    "club_id": 14
+  },
+  {
+    "query": "아마추어 오케스트라",
+    "club_id": 14
+  },
+  {
+    "query": "오케스트라 배우는",
+    "club_id": 14
+  },
+  {
+    "query": "ZIUM 단원 모집",
+    "club_id": 14
+  },
+  {
+    "query": "2025 오케스트라 신입",
+    "club_id": 14
+  },
+  {
+    "query": "보드게임 동아리",
+    "club_id": 15
+  },
+  {
+    "query": "MASTER 동아리",
+    "club_id": 15
+  },
+  {
+    "query": "세종보드게임",
+    "club_id": 15
+  },
+  {
+    "query": "보드게임 모임",
+    "club_id": 15
+  },
+  {
+    "query": "MASTER 모집",
+    "club_id": 15
+  },
+  {
+    "query": "여행하는 동아리",
+    "club_id": 16
+  },
+  {
+    "query": "세종대 여행동아리",
+    "club_id": 16
+  },
+  {
+    "query": "여행 즐기는 동아리",
+    "club_id": 16
+  },
+  {
+    "query": "여행 모임",
+    "club_id": 16
+  },
+  {
+    "query": "여행 배우는 곳",
+    "club_id": 16
+  },
+  {
+    "query": "서브컬쳐 모임",
+    "club_id": 17
+  },
+  {
+    "query": "만화 창작 동아리",
+    "club_id": 17
+  },
+  {
+    "query": "애니메이션 뷰어",
+    "club_id": 17
+  },
+  {
+    "query": "캐릭터 그림 배우는",
+    "club_id": 17
+  },
+  {
+    "query": "한손 동아리 모집",
+    "club_id": 17
+  },
+  {
+    "query": "코스프레 모임",
+    "club_id": 17
+  },
+  {
+    "query": "두바퀴 동아리",
+    "club_id": 19
+  },
+  {
+    "query": "오토바이 타는 동아리",
+    "club_id": 19
+  },
+  {
+    "query": "세종대 바이크 모임",
+    "club_id": 19
+  },
+  {
+    "query": "바이크 타고 여행",
+    "club_id": 19
+  },
+  {
+    "query": "두바퀴 스터디",
+    "club_id": 19
+  },
+  {
+    "query": "세종대 이륜차 동아리",
+    "club_id": 19
+  },
+  {
+    "query": "캐주얼 사진",
+    "club_id": 20
+  },
+  {
+    "query": "세종대 사진",
+    "club_id": 20
+  },
+  {
+    "query": "사진 동아리",
+    "club_id": 20
+  },
+  {
+    "query": "NIGHT OUT",
+    "club_id": 20
+  },
+  {
+    "query": "NIGHT CLICK",
+    "club_id": 20
+  },
+  {
+    "query": "밤부 모집",
+    "club_id": 20
+  },
+  {
+    "query": "문학회 검색",
+    "club_id": 21
+  },
+  {
+    "query": "세종대학교 문학회",
+    "club_id": 21
+  },
+  {
+    "query": "문학 모임",
+    "club_id": 21
+  },
+  {
+    "query": "시와 글 쓰는 동아리",
+    "club_id": 21
+  },
+  {
+    "query": "중앙동아리 문학회",
+    "club_id": 21
+  },
+  {
+    "query": "문학스터디",
+    "club_id": 21
+  },
+  {
+    "query": "서예 동아리",
+    "club_id": 22
+  },
+  {
+    "query": "세종서회 모집",
+    "club_id": 22
+  },
+  {
+    "query": "서예 모임",
+    "club_id": 22
+  },
+  {
+    "query": "한글 캘리그라피",
+    "club_id": 22
+  },
+  {
+    "query": "서예 스터디",
+    "club_id": 22
+  },
+  {
+    "query": "액티비티 동아리",
+    "club_id": 23
+  },
+  {
+    "query": "청춘 즐기기",
+    "club_id": 23
+  },
+  {
+    "query": "투두 모집",
+    "club_id": 23
+  },
+  {
+    "query": "세종대 파티 동아리",
+    "club_id": 23
+  },
+  {
+    "query": "버킷리스트 동아리",
+    "club_id": 23
+  },
+  {
+    "query": "친목 활동 동아리",
+    "club_id": 23
+  },
+  {
+    "query": "학술동아리 UNSA",
+    "club_id": 24
+  },
+  {
+    "query": "UNSA 모집",
+    "club_id": 24
+  },
+  {
+    "query": "세종대학교 학술",
+    "club_id": 24
+  },
+  {
+    "query": "MUN 모임",
+    "club_id": 24
+  },
+  {
+    "query": "세종 MUN",
+    "club_id": 24
+  },
+  {
+    "query": "학술연합 활동",
+    "club_id": 24
+  },
+  {
+    "query": "나노신소재공학부 스터디",
+    "club_id": 25
+  },
+  {
+    "query": "나노신소재공학부 발표회",
+    "club_id": 25
+  },
+  {
+    "query": "나노신소재공학부 세미나",
+    "club_id": 25
+  },
+  {
+    "query": "나노신소재공학부 모임",
+    "club_id": 25
+  },
+  {
+    "query": "나노신소재공학부 진로",
+    "club_id": 25
+  },
+  {
+    "query": "MESH 모집",
+    "club_id": 25
+  },
+  {
+    "query": "자동화 프로젝트",
+    "club_id": 26
+  },
+  {
+    "query": "프로젝트 스터디",
+    "club_id": 26
+  },
+  {
+    "query": "자동화 모임",
+    "club_id": 26
+  },
+  {
+    "query": "자동화 배우는",
+    "club_id": 26
+  },
+  {
+    "query": "프로젝트 개발",
+    "club_id": 26
+  },
+  {
+    "query": "AI 스터디",
+    "club_id": 27
+  },
+  {
+    "query": "머신러닝 모임",
+    "club_id": 27
+  },
+  {
+    "query": "인공지능 동아리",
+    "club_id": 27
+  },
+  {
+    "query": "AI 네트워크",
+    "club_id": 27
+  },
+  {
+    "query": "AI 모임",
+    "club_id": 27
+  },
+  {
+    "query": "머신러닝 스터디",
+    "club_id": 27
+  },
+  {
+    "query": "투자 동아리",
+    "club_id": 28
+  },
+  {
+    "query": "주식 투자 모임",
+    "club_id": 28
+  },
+  {
+    "query": "증권 투자 연구회",
+    "club_id": 28
+  },
+  {
+    "query": "세종투자연구회 모집",
+    "club_id": 28
+  },
+  {
+    "query": "금융 투자 동아리",
+    "club_id": 28
+  },
+  {
+    "query": "투자 스터디",
+    "club_id": 28
+  },
+  {
+    "query": "세종 RUDDER 모집",
+    "club_id": 29
+  },
+  {
+    "query": "세종 RUDDER 로켓",
+    "club_id": 29
+  },
+  {
+    "query": "세종 RUDDER 항공기",
+    "club_id": 29
+  },
+  {
+    "query": "세종 RUDDER 제작",
+    "club_id": 29
+  },
+  {
+    "query": "세종 RUDDER 스터디",
+    "club_id": 29
+  },
+  {
+    "query": "세종 RUDDER 부원",
+    "club_id": 29
+  },
+  {
+    "query": "마케팅 동아리",
+    "club_id": 30
+  },
+  {
+    "query": "유마프랜 모집",
+    "club_id": 30
+  },
+  {
+    "query": "세종 마케팅",
+    "club_id": 30
+  },
+  {
+    "query": "유마프랜 활동",
+    "club_id": 30
+  },
+  {
+    "query": "마케팅 스터디",
+    "club_id": 30
+  },
+  {
+    "query": "유마프랜 모임",
+    "club_id": 30
+  },
+  {
+    "query": "생명과학 스터디",
+    "club_id": 32
+  },
+  {
+    "query": "학술정보 동아리",
+    "club_id": 32
+  },
+  {
+    "query": "논문 공부 모임",
+    "club_id": 32
+  },
+  {
+    "query": "생명과학 플랫폼",
+    "club_id": 32
+  },
+  {
+    "query": "LIFrary 모집",
+    "club_id": 32
+  },
+  {
+    "query": "생명과학 소식지",
+    "club_id": 32
+  },
+  {
+    "query": "AI 학술 동아리",
+    "club_id": 33
+  },
+  {
+    "query": "머신러닝 모임",
+    "club_id": 33
+  },
+  {
+    "query": "임베디드 시스템 동아리",
+    "club_id": 33
+  },
+  {
+    "query": "인공지능 스터디",
+    "club_id": 33
+  },
+  {
+    "query": "전자공학 AI 동아리",
+    "club_id": 33
+  },
+  {
+    "query": "Prompt 모집",
+    "club_id": 33
+  },
+  {
+    "query": "FOogle 연구",
+    "club_id": 34
+  },
+  {
+    "query": "FOogle 모임",
+    "club_id": 34
+  },
+  {
+    "query": "FOogle 배우는",
+    "club_id": 34
+  },
+  {
+    "query": "FOogle 동아리",
+    "club_id": 34
+  },
+  {
+    "query": "푸글 학술",
+    "club_id": 34
+  },
+  {
+    "query": "FOogle 학술",
+    "club_id": 34
+  },
+  {
+    "query": "한류 연구 동아리",
+    "club_id": 35
+  },
+  {
+    "query": "G:low 세종대",
+    "club_id": 35
+  },
+  {
+    "query": "한류 문화 체험",
+    "club_id": 35
+  },
+  {
+    "query": "한류 스토리텔링 모임",
+    "club_id": 35
+  },
+  {
+    "query": "글로벌 한류 동아리",
+    "club_id": 35
+  },
+  {
+    "query": "한류 콘텐츠 연구",
+    "club_id": 35
+  },
+  {
+    "query": "AI 스터디",
+    "club_id": 36
+  },
+  {
+    "query": "인공지능 모임",
+    "club_id": 36
+  },
+  {
+    "query": "로봇학 동아리",
+    "club_id": 36
+  },
+  {
+    "query": "SMARCLE 참여",
+    "club_id": 36
+  },
+  {
+    "query": "AI 응용 모임",
+    "club_id": 36
+  },
+  {
+    "query": "로봇학 공부",
+    "club_id": 36
+  },
+  {
+    "query": "게임제작 동아리",
+    "club_id": 37
+  },
+  {
+    "query": "판도라큐브 모집",
+    "club_id": 37
+  },
+  {
+    "query": "판도라큐브 신입",
+    "club_id": 37
+  },
+  {
+    "query": "게임제작 스터디",
+    "club_id": 37
+  },
+  {
+    "query": "게임 제작 모임",
+    "club_id": 37
+  },
+  {
+    "query": "판도라큐브 가입",
+    "club_id": 37
+  },
+  {
+    "query": "아롬 스터디",
+    "club_id": 38
+  },
+  {
+    "query": "앱 개발 동아리",
+    "club_id": 38
+  },
+  {
+    "query": "프로젝트하는 곳",
+    "club_id": 38
+  },
+  {
+    "query": "중앙 클럽 아롬",
+    "club_id": 38
+  },
+  {
+    "query": "아롬 모임",
+    "club_id": 38
+  },
+  {
+    "query": "개발 동아리",
+    "club_id": 38
+  },
+  {
+    "query": "코딩 스터디",
+    "club_id": 39
+  },
+  {
+    "query": "인터페이스 동아리",
+    "club_id": 39
+  },
+  {
+    "query": "3D프린터 배우는",
+    "club_id": 39
+  },
+  {
+    "query": "무박 해커톤",
+    "club_id": 39
+  },
+  {
+    "query": "아두이노 스터디",
+    "club_id": 39
+  },
+  {
+    "query": "비전공자 코딩",
+    "club_id": 39
+  },
+  {
+    "query": "프로그래밍 동아리",
+    "club_id": 40
+  },
+  {
+    "query": "IT 동아리 모집",
+    "club_id": 40
+  },
+  {
+    "query": "En# 모집",
+    "club_id": 40
+  },
+  {
+    "query": "개발 동아리",
+    "club_id": 40
+  },
+  {
+    "query": "En# 스터디",
+    "club_id": 40
+  },
+  {
+    "query": "천체관측 동아리",
+    "club_id": 41
+  },
+  {
+    "query": "별무리 동아리",
+    "club_id": 41
+  },
+  {
+    "query": "중央天文 동아리",
+    "club_id": 41
+  },
+  {
+    "query": "천문관측 모임",
+    "club_id": 41
+  },
+  {
+    "query": "별관측 모임",
+    "club_id": 41
+  },
+  {
+    "query": "중央天文 모임",
+    "club_id": 41
+  },
+  {
+    "query": "CCC 모임",
+    "club_id": 42
+  },
+  {
+    "query": "Campus crusade for Christ",
+    "club_id": 42
+  },
+  {
+    "query": "신학 동아리",
+    "club_id": 42
+  },
+  {
+    "query": "신앙 모임",
+    "club_id": 42
+  },
+  {
+    "query": "교회 모임",
+    "club_id": 42
+  },
+  {
+    "query": "1:1 멘토링",
+    "club_id": 42
+  },
+  {
+    "query": "IVF 모임",
+    "club_id": 43
+  },
+  {
+    "query": "기독교 동아리",
+    "club_id": 43
+  },
+  {
+    "query": "캠퍼스 예배 모임",
+    "club_id": 43
+  },
+  {
+    "query": "성경 공부 모임",
+    "club_id": 43
+  },
+  {
+    "query": "IVF 활동",
+    "club_id": 43
+  },
+  {
+    "query": "기독학생회 모집",
+    "club_id": 43
+  },
+  {
+    "query": "JYM 세종",
+    "club_id": 44
+  },
+  {
+    "query": "세종대 기독교 동아리",
+    "club_id": 44
+  },
+  {
+    "query": "중앙 JYM",
+    "club_id": 44
+  },
+  {
+    "query": "세종 중앙 기독교",
+    "club_id": 44
+  },
+  {
+    "query": "CHRISTIAN STUDY GROUP",
+    "club_id": 44
+  },
+  {
+    "query": "크리스천 모임 세종",
+    "club_id": 44
+  },
+  {
+    "query": "가톨릭 동아리",
+    "club_id": 45
+  },
+  {
+    "query": "레지나 동아리",
+    "club_id": 45
+  },
+  {
+    "query": "가톨릭 모임",
+    "club_id": 45
+  },
+  {
+    "query": "성경 읽는 동아리",
+    "club_id": 45
+  },
+  {
+    "query": "서가대연",
+    "club_id": 45
+  },
+  {
+    "query": "5지구 행사 참여하는 곳",
+    "club_id": 45
+  },
+  {
+    "query": "농구 동아리",
+    "club_id": 46
+  },
+  {
+    "query": "CENTRAL_CLUB 농구",
+    "club_id": 46
+  },
+  {
+    "query": "RUSH 농구",
+    "club_id": 46
+  },
+  {
+    "query": "세종 농구",
+    "club_id": 46
+  },
+  {
+    "query": "중앙 농구 동아리",
+    "club_id": 46
+  },
+  {
+    "query": "RUSH 농구 모임",
+    "club_id": 46
+  },
+  {
+    "query": "발파람 동아리",
+    "club_id": 47
+  },
+  {
+    "query": "택견 모임",
+    "club_id": 47
+  },
+  {
+    "query": "택견 배우는",
+    "club_id": 47
+  },
+  {
+    "query": "발파람 택견",
+    "club_id": 47
+  },
+  {
+    "query": "중앙동아리 발파람",
+    "club_id": 47
+  },
+  {
+    "query": "테니스 동아리",
+    "club_id": 48
+  },
+  {
+    "query": "세종대학교 테니스",
+    "club_id": 48
+  },
+  {
+    "query": "테니스 모임",
+    "club_id": 48
+  },
+  {
+    "query": "테니스 스터디",
+    "club_id": 48
+  },
+  {
+    "query": "테니스 운동",
+    "club_id": 48
+  },
+  {
+    "query": "중앙동아리 요트부",
+    "club_id": 49
+  },
+  {
+    "query": "SJYC 요트부",
+    "club_id": 49
+  },
+  {
+    "query": "세종대 요트 동아리",
+    "club_id": 49
+  },
+  {
+    "query": "요트 배우는 곳",
+    "club_id": 49
+  },
+  {
+    "query": "세종대 요트 모임",
+    "club_id": 49
+  },
+  {
+    "query": "야구 동아리",
+    "club_id": 50
+  },
+  {
+    "query": "세종킹스 모임",
+    "club_id": 50
+  },
+  {
+    "query": "프로야구 관람 동아리",
+    "club_id": 50
+  },
+  {
+    "query": "야구 훈련 동아리",
+    "club_id": 50
+  },
+  {
+    "query": "대학야구 대회",
+    "club_id": 50
+  },
+  {
+    "query": "야구 동호회",
+    "club_id": 50
+  },
+  {
+    "query": "스노우보드 동아리",
+    "club_id": 51
+  },
+  {
+    "query": "세종대학교 스노우보드",
+    "club_id": 51
+  },
+  {
+    "query": "JUMP 동아리 모집",
+    "club_id": 51
+  },
+  {
+    "query": "스노우보드 활동 동아리",
+    "club_id": 51
+  },
+  {
+    "query": "세종대학교 중앙동아리",
+    "club_id": 51
+  },
+  {
+    "query": "스노우보드 친목",
+    "club_id": 51
+  },
+  {
+    "query": "탁구 동아리",
+    "club_id": 52
+  },
+  {
+    "query": "세종대 탁구",
+    "club_id": 52
+  },
+  {
+    "query": "중앙동아리 탁구",
+    "club_id": 52
+  },
+  {
+    "query": "탁구 모임",
+    "club_id": 52
+  },
+  {
+    "query": "TSP 모집",
+    "club_id": 52
+  },
+  {
+    "query": "산악부",
+    "club_id": 53
+  },
+  {
+    "query": "산행 동아리",
+    "club_id": 53
+  },
+  {
+    "query": "암벽등반 모임",
+    "club_id": 53
+  },
+  {
+    "query": "스포츠 클라이밍",
+    "club_id": 53
+  },
+  {
+    "query": "등산 모임",
+    "club_id": 53
+  },
+  {
+    "query": "아웃도어 동아리",
+    "club_id": 53
+  },
+  {
+    "query": "세종대 주짓수",
+    "club_id": 55
+  },
+  {
+    "query": "세종 주짓수 동아리",
+    "club_id": 55
+  },
+  {
+    "query": "Escaper 주짓수",
+    "club_id": 55
+  },
+  {
+    "query": "세종 주짓수 스토리",
+    "club_id": 55
+  },
+  {
+    "query": "세종 주짓수 동아리 ESCAPER",
+    "club_id": 55
+  },
+  {
+    "query": "세종 주짓수 동아리 모집",
+    "club_id": 55
+  },
+  {
+    "query": "배드민턴 동아리",
+    "club_id": 57
+  },
+  {
+    "query": "세종대 배드민턴",
+    "club_id": 57
+  },
+  {
+    "query": "세콕세콕 모집",
+    "club_id": 57
+  },
+  {
+    "query": "세종 배드민턴 모임",
+    "club_id": 57
+  },
+  {
+    "query": "세종 배드민턴 스토리",
+    "club_id": 57
+  },
+  {
+    "query": "세종 배드민턴 스터디",
+    "club_id": 57
+  },
+  {
+    "query": "세종대 클라이밍 동아리",
+    "club_id": 58
+  },
+  {
+    "query": "세클즈 동아리",
+    "club_id": 58
+  },
+  {
+    "query": "세종대 클라이밍 모임",
+    "club_id": 58
+  },
+  {
+    "query": "클라이밍 배우는 곳",
+    "club_id": 58
+  },
+  {
+    "query": "세클즈 스터디",
+    "club_id": 58
+  },
+  {
+    "query": "세종대 클라이밍 스포츠",
+    "club_id": 58
+  },
+  {
+    "query": "볼링동아리 세종대",
+    "club_id": 59
+  },
+  {
+    "query": "세종대 볼링 모임",
+    "club_id": 59
+  },
+  {
+    "query": "롤링세종 모집",
+    "club_id": 59
+  },
+  {
+    "query": "세종대 볼링스터디",
+    "club_id": 59
+  },
+  {
+    "query": "볼링하는 세종대 동아리",
+    "club_id": 59
+  },
+  {
+    "query": "세종대 볼링대회",
+    "club_id": 59
+  },
+  {
+    "query": "초록스터디",
+    "club_id": 60
+  },
+  {
+    "query": "코드리뷰",
+    "club_id": 60
+  },
+  {
+    "query": "스터디모임",
+    "club_id": 60
+  },
+  {
+    "query": "기술스터디",
+    "club_id": 60
+  },
+  {
+    "query": "매칭소프트웨어",
+    "club_id": 60
+  },
+  {
+    "query": "개발동아리",
+    "club_id": 60
+  },
+  {
+    "query": "환경 학술 동아리",
+    "club_id": 61
+  },
+  {
+    "query": "환경 문제 해결 모임",
+    "club_id": 61
+  },
+  {
+    "query": "GREEN 캠퍼스 만들기",
+    "club_id": 61
+  },
+  {
+    "query": "세종환경동아리",
+    "club_id": 61
+  },
+  {
+    "query": "환경 프로젝트 스터디",
+    "club_id": 61
+  },
+  {
+    "query": "학술대회 참여 동아리",
+    "club_id": 61
+  },
+  {
+    "query": "스키 동아리",
+    "club_id": 62
+  },
+  {
+    "query": "세종스키 모집",
+    "club_id": 62
+  },
+  {
+    "query": "스키 모임",
+    "club_id": 62
+  },
+  {
+    "query": "스키부 가입",
+    "club_id": 62
+  },
+  {
+    "query": "스키스터디",
+    "club_id": 62
+  },
+  {
+    "query": "스키 대회",
+    "club_id": 62
+  },
+  {
+    "query": "축구 동아리",
+    "club_id": 63
+  },
+  {
+    "query": "세종대 축구",
+    "club_id": 63
+  },
+  {
+    "query": "축구 모임",
+    "club_id": 63
+  },
+  {
+    "query": "축구 스토리지",
+    "club_id": 63
+  },
+  {
+    "query": "축구 스터디",
+    "club_id": 63
+  },
+  {
+    "query": "해례본 축구",
+    "club_id": 63
+  },
+  {
+    "query": "인융대 밴드 동아리",
+    "club_id": 64
+  },
+  {
+    "query": "세종대 무붕 모집",
+    "club_id": 64
+  },
+  {
+    "query": "소융대 밴드 동아리",
+    "club_id": 64
+  },
+  {
+    "query": "인공지능 융합대 밴드",
+    "club_id": 64
+  },
+  {
+    "query": "무붕 신입모집",
+    "club_id": 64
+  },
+  {
+    "query": "세종대 무붕 배우기",
+    "club_id": 64
+  },
+  {
+    "query": "세에모 세종대",
+    "club_id": 73
+  },
+  {
+    "query": "SAG 세종대",
+    "club_id": 73
+  },
+  {
+    "query": "세종대 에어소프트 모임",
+    "club_id": 73
+  },
+  {
+    "query": "세종대 사격 동아리",
+    "club_id": 73
+  },
+  {
+    "query": "에어소프트하는 곳",
+    "club_id": 73
+  },
+  {
+    "query": "스트릿 댄스 모임",
+    "club_id": 74
+  },
+  {
+    "query": "백스트릿 동아리",
+    "club_id": 74
+  },
+  {
+    "query": "백스트릿 신입모집",
+    "club_id": 74
+  },
+  {
+    "query": "세종 스트릿 댄스",
+    "club_id": 74
+  },
+  {
+    "query": "스트릿 댄스 크루",
+    "club_id": 74
+  },
+  {
+    "query": "BACKSTREET 신입",
+    "club_id": 74
+  },
+  {
+    "query": "해킹보안 모임",
+    "club_id": 75
+  },
+  {
+    "query": "사이버국방 스터디",
+    "club_id": 75
+  },
+  {
+    "query": "보안 동아리",
+    "club_id": 75
+  },
+  {
+    "query": "해킹 동아리",
+    "club_id": 75
+  },
+  {
+    "query": "사이버보안 모임",
+    "club_id": 75
+  },
+  {
+    "query": "국방해킹 모임",
+    "club_id": 75
+  },
+  {
+    "query": "세종대학교 경영학부 학술",
+    "club_id": 76
+  },
+  {
+    "query": "TOP 학술소모임",
+    "club_id": 76
+  },
+  {
+    "query": "경영학부 TOP 모임",
+    "club_id": 76
+  },
+  {
+    "query": "세종대학교 경영학부 TOP",
+    "club_id": 76
+  },
+  {
+    "query": "세종대학교 경영학부 학술동아리",
+    "club_id": 76
+  },
+  {
+    "query": "학술 소모임 모집",
+    "club_id": 76
+  },
+  {
+    "query": "UAV 모임",
+    "club_id": 77
+  },
+  {
+    "query": "항공우주 모임",
+    "club_id": 77
+  },
+  {
+    "query": "UAV 스터디",
+    "club_id": 77
+  },
+  {
+    "query": "항공우주 연구",
+    "club_id": 77
+  },
+  {
+    "query": "UAV 동아리",
+    "club_id": 77
+  },
+  {
+    "query": "UAV 배우는",
+    "club_id": 77
+  },
+  {
+    "query": "축구 동아리",
+    "club_id": 78
+  },
+  {
+    "query": "풋살 모임",
+    "club_id": 78
+  },
+  {
+    "query": "소프트웨어 축구",
+    "club_id": 78
+  },
+  {
+    "query": "소키타카 동아리",
+    "club_id": 78
+  },
+  {
+    "query": "콘텐츠소프트웨어 축구",
+    "club_id": 78
+  },
+  {
+    "query": "아차산 축구",
+    "club_id": 78
+  },
+  {
+    "query": "인문과학 축구동아리",
+    "club_id": 79
+  },
+  {
+    "query": "SEJONG 축구 모임",
+    "club_id": 79
+  },
+  {
+    "query": "FCGG 배우는 곳",
+    "club_id": 79
+  },
+  {
+    "query": "인문 축구 스터디",
+    "club_id": 79
+  },
+  {
+    "query": "소규모 인문 축구",
+    "club_id": 79
+  },
+  {
+    "query": "SEJONG 소규모 축구",
+    "club_id": 79
+  },
+  {
+    "query": "화학 스터디 세종대",
+    "club_id": 80
+  },
+  {
+    "query": "세종대 논문 동아리",
+    "club_id": 80
+  },
+  {
+    "query": "화학과 비교과",
+    "club_id": 80
+  },
+  {
+    "query": "CHEMISPHERE 모집",
+    "club_id": 80
+  },
+  {
+    "query": "세종대 화학 동아리",
+    "club_id": 80
+  },
+  {
+    "query": "화학 대학원 준비 동아리",
+    "club_id": 80
+  },
+  {
+    "query": "경제학술 모임",
+    "club_id": 81
+  },
+  {
+    "query": "경제학 공부하는 곳",
+    "club_id": 81
+  },
+  {
+    "query": "경제학 스터디",
+    "club_id": 81
+  },
+  {
+    "query": "경제학 토론하는 곳",
+    "club_id": 81
+  },
+  {
+    "query": "경제학 논문 공부",
+    "club_id": 81
+  },
+  {
+    "query": "경제학 강의 정리",
+    "club_id": 81
+  },
+  {
+    "query": "프레임 설계 동아리",
+    "club_id": 82
+  },
+  {
+    "query": "EV대회 동아리",
+    "club_id": 82
+  },
+  {
+    "query": "자동제어 모임",
+    "club_id": 82
+  },
+  {
+    "query": "AUTORY 모집",
+    "club_id": 82
+  },
+  {
+    "query": "자작 자동차 모임",
+    "club_id": 82
+  },
+  {
+    "query": "한국자동차공학회 동아리",
+    "club_id": 82
+  },
+  {
+    "query": "노래하는 동아리",
+    "club_id": 83
+  },
+  {
+    "query": "밴드 모임",
+    "club_id": 83
+  },
+  {
+    "query": "소리사랑 세종대",
+    "club_id": 83
+  },
+  {
+    "query": "교육학과 소모임",
+    "club_id": 83
+  },
+  {
+    "query": "노래 공부하는 곳",
+    "club_id": 83
+  },
+  {
+    "query": "음악 스터디",
+    "club_id": 83
+  },
+  {
+    "query": "캐릭터 연구 모임",
+    "club_id": 84
+  },
+  {
+    "query": "캐릭터 만들기 동아리",
+    "club_id": 84
+  },
+  {
+    "query": "캐릭터 설계 스터디",
+    "club_id": 84
+  },
+  {
+    "query": "캐릭터 디자인 모임",
+    "club_id": 84
+  },
+  {
+    "query": "캐릭터 연구하는 곳",
+    "club_id": 84
+  },
+  {
+    "query": "캐릭터 만들기하는 동아리",
+    "club_id": 84
+  },
+  {
+    "query": "건축 봉사 모임",
+    "club_id": 85
+  },
+  {
+    "query": "LOHOS 봉사",
+    "club_id": 85
+  },
+  {
+    "query": "건축공학 봉사",
+    "club_id": 85
+  },
+  {
+    "query": "거주 환경 개선 봉사",
+    "club_id": 85
+  },
+  {
+    "query": "집 짓는 봉사",
+    "club_id": 85
+  },
+  {
+    "query": "건축 봉사 동아리",
+    "club_id": 85
+  },
+  {
+    "query": "밴드 동아리",
+    "club_id": 86
+  },
+  {
+    "query": "밴드 모임",
+    "club_id": 86
+  },
+  {
+    "query": "음악 놀이터",
+    "club_id": 86
+  },
+  {
+    "query": "연합 밴드",
+    "club_id": 86
+  },
+  {
+    "query": "밴드 스터디",
+    "club_id": 86
+  },
+  {
+    "query": "세종대 응원단",
+    "club_id": 94
+  },
+  {
+    "query": "IGNIS 동아리",
+    "club_id": 94
+  },
+  {
+    "query": "IGNIS 모집",
+    "club_id": 94
+  },
+  {
+    "query": "세종대 IGNIS",
+    "club_id": 94
+  },
+  {
+    "query": "응원단 모집",
+    "club_id": 94
+  },
+  {
+    "query": "IGNIS 신입",
+    "club_id": 94
+  },
+  {
+    "query": "세종나누리 모집",
+    "club_id": 97
+  },
+  {
+    "query": "세종나누리 봉사",
+    "club_id": 97
+  },
+  {
+    "query": "세종나누리 가입",
+    "club_id": 97
+  },
+  {
+    "query": "세종나누리 참여",
+    "club_id": 97
+  },
+  {
+    "query": "세종나누리 활동",
+    "club_id": 97
+  },
+  {
+    "query": "세종나누리 봉사단",
+    "club_id": 97
+  },
+  {
+    "query": "펜싱부 모임",
+    "club_id": 98
+  },
+  {
+    "query": "세종대 펜싱",
+    "club_id": 98
+  },
+  {
+    "query": "세jong 펜싱부",
+    "club_id": 98
+  },
+  {
+    "query": "펜싱스터디",
+    "club_id": 98
+  },
+  {
+    "query": "대학 펜싱",
+    "club_id": 98
+  },
+  {
+    "query": "새내기 펜싱",
+    "club_id": 98
+  },
+  {
+    "query": "세종대 MMA",
+    "club_id": 99
+  },
+  {
+    "query": "세종대 MMA클럽",
+    "club_id": 99
+  },
+  {
+    "query": "MMA하는 곳",
+    "club_id": 99
+  },
+  {
+    "query": "프로선수 MMA",
+    "club_id": 99
+  },
+  {
+    "query": "SEGYM 모집",
+    "club_id": 99
   }
 ]
