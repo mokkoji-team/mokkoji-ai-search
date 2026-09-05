@@ -265,6 +265,84 @@ CURATED_PAIRS = [
     {"query": "논문 리뷰 모임",         "club_id": 36},
     {"query": "파이썬 딥러닝 공부",      "club_id": 36},
     {"query": "AI 경진대회 나가는 동아리", "club_id": 36},
+    # 그리디 (코드리뷰가 주요 활동으로 명시된 유일한 동아리)
+    {"query": "코드리뷰",               "club_id": 60},
+    {"query": "코드 리뷰 하는 동아리",   "club_id": 60},
+    {"query": "그리디",                 "club_id": 60},
+    {"query": "Greedy",                "club_id": 60},
+    # 설명/모집글에 한국어 별칭이 명시된 동아리
+    {"query": "인트로",      "club_id": 9},    # INTRO
+    {"query": "알스아망디",  "club_id": 298},  # ARS AMANDI
+    {"query": "하이포",      "club_id": 310},  # HYPO
+    {"query": "아엠슈",      "club_id": 328},  # IMSH
+    {"query": "뮤트",        "club_id": 329},  # MUTE
+    {"query": "나인식스",    "club_id": 13},   # NinesiX
+    {"query": "지음",        "club_id": 14},   # ZIUM
+    {"query": "라이프러리",  "club_id": 32},   # LIFrary
+    {"query": "아퀴",        "club_id": 271},  # AQUI
+    {"query": "쿠필",        "club_id": 272},  # Kuphil
+    {"query": "후세문화회",  "club_id": 345},  # HUSE-C
+    {"query": "오파츠",      "club_id": 350},  # OOPArts
+    {"query": "푸글",        "club_id": 34},   # Foogle
+    {"query": "지지",        "club_id": 86},   # ZIZZY
+    {"query": "하이볼",      "club_id": 335},  # HY-BALL
+    {"query": "건대를 달리다", "club_id": 262}, # RIKU
+    # 영어 이름 한국어 발음
+    {"query": "싸이",        "club_id": 27},   # SAI
+    {"query": "사이",        "club_id": 27},   # SAI
+    {"query": "페이지세븐",  "club_id": 11},   # PAGE7
+    {"query": "노드",        "club_id": 26},   # NODE
+    {"query": "메쉬",        "club_id": 25},   # MESH
+    {"query": "러더",        "club_id": 29},   # RUDDER
+    {"query": "프롬프트",    "club_id": 33},   # Prompt
+    {"query": "백스트릿",    "club_id": 74},   # BACKSTREET
+    {"query": "세짐",        "club_id": 99},   # SEGYM
+    {"query": "글리",        "club_id": 299},  # GLEE
+    {"query": "매직아이",    "club_id": 300},  # Magic-i
+    {"query": "쇼다운",      "club_id": 301},  # SHOW DOWN
+    {"query": "랙트",        "club_id": 303},  # RACT
+    {"query": "하마",        "club_id": 340},  # HAMA
+    {"query": "하스라",      "club_id": 341},  # HASRA
+    {"query": "포리프",      "club_id": 343},  # FORIF
+    {"query": "허스",        "club_id": 344},  # HUHS
+    {"query": "쿠사",        "club_id": 346},  # KUSA
+    {"query": "엣지",        "club_id": 222},  # EDGE
+    {"query": "쿠니멀",      "club_id": 236},  # Kunimal
+    {"query": "뮤즈",        "club_id": 273},  # MUSE
+    {"query": "점프",        "club_id": 51},   # JUMP
+    {"query": "이스케이퍼",  "club_id": 55},   # ESCAPER
+    {"query": "더아이즈",    "club_id": 61},   # THE EYES
+    {"query": "케미스피어",  "club_id": 80},   # CHEMISPHERE
+    {"query": "비쿠",        "club_id": 254},  # BiKU
+    {"query": "리쿠",        "club_id": 262},  # RIKU
+    {"query": "헥",          "club_id": 342},  # HECC
+    # 나머지 영문 동아리 한국어 발음
+    {"query": "타임",        "club_id": 348},  # TIME (한양대)
+    {"query": "타임",        "club_id": 230},  # TIME (건국대)
+    {"query": "씨씨씨",      "club_id": 315},  # CCC (한양대)
+    {"query": "씨씨씨",      "club_id": 42},   # CCC (세종대)
+    {"query": "아이브이에프", "club_id": 317},  # IVF (한양대)
+    {"query": "아이브이에프", "club_id": 43},   # IVF (세종대)
+    {"query": "이에스에프",  "club_id": 316},  # ESF
+    {"query": "햄",          "club_id": 220},  # HAM
+    {"query": "하이티씨",    "club_id": 327},  # HYTC
+    {"query": "피프틴어스",  "club_id": 330},  # 15ers
+    {"query": "에스에스씨",  "club_id": 347},  # SSC
+    {"query": "디에스엠",    "club_id": 349},  # DSM
+    {"query": "씨이에스",    "club_id": 219},  # CES
+    {"query": "이목",        "club_id": 221},  # IMOK
+    {"query": "이프",        "club_id": 229},  # IF
+    {"query": "운사",        "club_id": 240},  # UNSA
+    {"query": "유엔에스에이", "club_id": 240},  # UNSA
+    {"query": "케이티씨",    "club_id": 250},  # KTC
+    {"query": "에스에스지",  "club_id": 31},   # S.S.G
+    {"query": "제이와이엠",  "club_id": 44},   # JYM
+    {"query": "에스티씨",    "club_id": 48},   # STC
+    {"query": "티에스피",    "club_id": 52},   # TSP
+    {"query": "탑",          "club_id": 76},   # TOP
+    {"query": "에스유에이브이", "club_id": 77}, # s.UAV
+    {"query": "에프씨지지",  "club_id": 79},   # FCGG
+    {"query": "에프씨쿠니브", "club_id": 249}, # FC KUNIV
 ]
 
 

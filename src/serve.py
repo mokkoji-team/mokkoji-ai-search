@@ -16,7 +16,7 @@ from pathlib import Path
 
 from fastapi import Body, FastAPI, HTTPException
 from typing import Annotated
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 import sys
 from dotenv import load_dotenv
@@ -31,7 +31,7 @@ BASE_DIR = Path(__file__).parent.parent
 
 # bge-m3: 다국어 검색 특화 임베딩 모델 (HuggingFace에서 자동 다운로드)
 # 파인튜닝된 모델이 있으면 models/finetuned/ 경로로 변경 가능
-MODEL_PATH = "models/finetuned"
+MODEL_PATH = "models/finetuned-ko-sroberta"
 
 # bge-reranker-v2-m3: 임베딩 검색 후 정밀 재정렬
 RERANKER_PATH = "BAAI/bge-reranker-v2-m3"
@@ -85,10 +85,12 @@ def _is_recruiting(club: dict) -> bool:
 
 
 class SearchRequest(BaseModel):
+    model_config = {"json_schema_extra": {"example": {"query": "축구", "university_code": "SEJONG"}}}
+
     query: str
-    threshold: float = 0.5          # 이 점수 미만은 결과에서 제외
-    max_results: int | None = None  # 반환 상한 (None이면 threshold 이상 전부 반환)
-    university_code: str | None = None
+    threshold: float = Field(default=0.5, description="이 점수 미만 결과 제외 (0~1, 기본값 0.5)")
+    max_results: int | None = Field(default=None, description="반환 상한 (미입력 시 threshold 이상 전부 반환)")
+    university_code: str | None = Field(default=None, description="학교 필터 (SEJONG / KONKUK / HANYANG)")
 
 
 class SearchResult(BaseModel):

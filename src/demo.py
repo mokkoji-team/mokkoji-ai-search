@@ -9,8 +9,8 @@ from search import ClubSearchEngine
 
 BASE_DIR = Path(__file__).parent.parent
 CLUBS_PATH = str(BASE_DIR / "data" / "clubs.json")
-BASE_MODEL = "jhgan/ko-sroberta-multitask"
-FINETUNED_MODEL = str(BASE_DIR / "models" / "finetuned")
+BGE_MODEL = str(BASE_DIR / "models" / "finetuned")
+KO_MODEL = str(BASE_DIR / "models" / "finetuned-ko-sroberta")
 
 TEST_QUERIES = [
     "스마클",
@@ -36,23 +36,18 @@ def run(engine: ClubSearchEngine, queries: list[str], top_k: int = 3):
 
 def main():
     print("=" * 60)
-    print("베이스 모델 검색 결과")
+    print("bge-m3 파인튜닝 검색 결과")
     print("=" * 60)
-    base = ClubSearchEngine(BASE_MODEL)
-    base.index_from_file(CLUBS_PATH)
-    run(base, TEST_QUERIES)
-
-    ft_path = Path(FINETUNED_MODEL)
-    if not ft_path.exists():
-        print(f"\n\n[파인튜닝 모델 없음] 먼저 실행하세요: python src/train.py")
-        return
+    bge = ClubSearchEngine(BGE_MODEL)
+    bge.index_from_file(CLUBS_PATH)
+    run(bge, TEST_QUERIES)
 
     print("\n\n" + "=" * 60)
-    print("파인튜닝 모델 검색 결과")
+    print("ko-sroberta 파인튜닝 검색 결과")
     print("=" * 60)
-    ft = ClubSearchEngine(FINETUNED_MODEL)
-    ft.index_from_file(CLUBS_PATH)
-    run(ft, TEST_QUERIES)
+    ko = ClubSearchEngine(KO_MODEL)
+    ko.index_from_file(CLUBS_PATH)
+    run(ko, TEST_QUERIES)
 
 
 if __name__ == "__main__":
